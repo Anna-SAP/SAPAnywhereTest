@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<slim xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" slimEd="1.0" xsi:schemaLocation="www.sap.com/slim slim.xsd">
+    <header>
+        <locale>
+            <develLc>EN</develLc>
+            <contentLc>EN</contentLc>
+        </locale>
+        <objType>line</objType>
+        <domain>AW</domain>
+        <contentName>ANALYTICS_ANW</contentName>
+        <description>A full featured SLIM-file</description>
+        <defaults>
+            <maxL>255</maxL>
+        </defaults>
+        <workflow>
+            <contacts>
+                <developer/>
+            </contacts>
+        </workflow>
+    </header>
+    <body>
+        <loGrp grpClass="textType" grpName="XMSG">
+            <lo tK="P502819990">
+                <loC>Get metadata of model {0} failed</loC>
+            </lo>
+            <lo tK="P1306506793">
+                <loC>Default member {0} invalid for hierarchy {1} of model {2}</loC>
+            </lo>
+            <lo tK="P465264639">
+                <loC>Illegal analysis object ID {0}</loC>
+            </lo>
+            <lo tK="P2045161541">
+                <loC>Illegal measure ID {0}</loC>
+            </lo>
+            <lo tK="P442368864">
+                <loC>Illegal analysis object type {0}</loC>
+            </lo>
+            <lo tK="P365960358">
+                <loC>Missing member in filter {0}</loC>
+            </lo>
+            <lo tK="P1054749004">
+                <loC>Filter {0} with formula {1} cannot exclude all members.</loC>
+            </lo>
+            <lo tK="P1685155178">
+                <loC>Filter {0} has illegal formula {1}.</loC>
+            </lo>
+            <lo tK="P2054791408">
+                <loC>Missing parameter for filter {0} with formula {1}</loC>
+            </lo>
+            <lo tK="P894136381">
+                <loC>Missing operator for filter {0} with formula {1}</loC>
+            </lo>
+            <lo tK="P1429589971">
+                <loC>Illegal operator {2} for filter {0} with formula {1}</loC>
+            </lo>
+            <lo tK="P2069606756">
+                <loC>Missing value for filter {0} with operator {1}</loC>
+            </lo>
+            <lo tK="P1189798120">
+                <loC>Overlapped analysis object ID {0} in both axis and slice</loC>
+            </lo>
+            <lo tK="P2113624934">
+                <loC>Only single member is allowed in slice: {0}</loC>
+            </lo>
+            <lo tK="P525180150">
+                <loC>MDX query engine does not support variables.</loC>
+            </lo>
+            <lo tK="P881518310">
+                <loC>Result set exceeds maximum: {0}</loC>
+            </lo>
+            <lo tK="P201944585">
+                <loC>Illegal restricted measure ID: {0} (does not match format {1})</loC>
+            </lo>
+            <lo tK="P836991820">
+                <loC>Illegal calculated measure ID: {0} (does not match format {1})</loC>
+            </lo>
+            <lo tK="P1225333287">
+                <loC>Calculated expression for {0} is empty.</loC>
+            </lo>
+            <lo tK="P820314649">
+                <loC>Circular calculated expression detected for {0}</loC>
+            </lo>
+            <lo tK="P1602051889">
+                <loC>Illegal measure {1} in calculated expression for {0}</loC>
+            </lo>
+            <lo tK="P614050121">
+                <loC>Illegal type {1} in calculated expression for {0}</loC>
+            </lo>
+            <lo tK="P2009967053">
+                <loC>Illegal constant {1} in calculated expression for {0}</loC>
+            </lo>
+            <lo tK="P269453080">
+                <loC>Illegal calculated member ID: {0} (does not match format {1})</loC>
+            </lo>
+            <lo tK="P726816394">
+                <loC>Subtotal has no grouping analysis objects.</loC>
+            </lo>
+            <lo tK="P1701067910">
+                <loC>MDX query engine does not support paging.</loC>
+            </lo>
+            <lo tK="P2048212740">
+                <loC>MDX query engine does not support multiple restricted measures.</loC>
+            </lo>
+            <lo tK="P329721800">
+                <loC>MDX query engine does not support restricted measure with base filter.</loC>
+            </lo>
+            <lo tK="P483596727">
+                <loC>MDX query engine does not support calculated measure.</loC>
+            </lo>
+            <lo tK="P1955603201">
+                <loC>MDX query engine does not support calculated members.</loC>
+            </lo>
+            <lo tK="P57206027">
+                <loC>MDX query engine not support sub total</loC>
+            </lo>
+            <lo tK="P1433861100">
+                <loC>MDX query engine does not support base filter.</loC>
+            </lo>
+            <lo tK="P1434766208">
+                <loC>MDX query engine not support MAX/MIN aggregation</loC>
+            </lo>
+        </loGrp>
+    </body>
+</slim>

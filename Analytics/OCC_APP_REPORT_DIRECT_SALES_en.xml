@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<slim xmlns="www.sap.com/slim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" slimEd="1.0" xsi:schemaLocation="www.sap.com/slim slim.xsd">
+    <header>
+        <locale>
+            <develLc>EN</develLc>
+            <contentLc>EN</contentLc>
+        </locale>
+        <objType>line</objType>
+        <collection>ANYWHERE_OCC</collection>
+        <domain>AW</domain>
+        <contentName>OCC_APP_REPORT_DIRECT_SALES</contentName>
+        <description>A full featured SLIM-file</description>
+        <defaults>
+            <maxL>255</maxL>
+        </defaults>
+        <workflow>
+            <contacts>
+                <developer>I058953</developer>
+            </contacts>
+        </workflow>
+    </header>
+    <body>
+        <loGrp grpClass="textType" grpName="XMSG">
+            <lo tK="app.report.directsales.message" maxL="200">
+                <loC>(just a sample) xx error message</loC>
+            </lo>
+        </loGrp>
+        <loGrp grpClass="textType" grpName="XFLD">
+            <lo tK="label.winlostReason.title" maxL="200">
+                <loC>Won/Lost Reasons</loC>
+            </lo>
+            <lo tK="label.winlostReason.lost" maxL="200">
+                <loC>Lost Number</loC>
+            </lo>
+            <lo tK="label.winlostReason.win" maxL="200">
+                <loC>Won Number</loC>
+            </lo>
+            <lo tK="label.winlostReason.winlostnumber" maxL="200">
+                <loC>Number</loC>
+            </lo>
+            <lo tK="label.winlostReason.winlostamount" maxL="200">
+                <loC>Amount</loC>
+            </lo>
+            <lo tK="label.winlostReason.customer" maxL="200">
+                <loC>Customer</loC>
+            </lo>
+            <lo tK="label.winlostReason.stage" maxL="200">
+                <loC>Stage</loC>
+            </lo>
+            <lo tK="label.winlostReason.lostpotentialamount" maxL="200">
+                <loC>Total Lost Amount</loC>
+            </lo>
+            <lo tK="label.winlostReason.winpotentialamount" maxL="200">
+                <loC>Total Won Amount</loC>
+            </lo>
+            <lo tK="label.winlostReason.reason" maxL="200">
+                <loC>Reason</loC>
+            </lo>
+            <lo tK="label.leadSourceSuccess.title" maxL="200">
+                <loC>Successful Leads</loC>
+            </lo>
+            <lo tK="label.leadSourceSuccess.description" maxL="200">
+                <loC>This report displays how many leads successfully generated opportunities and quotations and classifies them according to their sources.</loC>
+            </lo>
+            <lo tK="label.leadSourceSuccess.source" maxL="200">
+                <loC>Source</loC>
+            </lo>
+            <lo tK="label.leadSourceSuccess.count" maxL="200">
+                <loC>Number</loC>
+            </lo>
+            <lo tK="label.leadSourceSuccess.countColumn" maxL="200">
+                <loC>Number of Leads</loC>
+            </lo>
+            <lo tK="label.directSales.startDate" maxL="200">
+                <loC>Start Date</loC>
+            </lo>
+            <lo tK="label.directSales.endDate" maxL="200">
+                <loC>End Date</loC>
+            </lo>
+            <lo tK="label.customer360.name" maxL="200">
+                <loC>Customer 360</loC>
+            </lo>
+            <lo tK="label.customer360.param.name" maxL="200">
+                <loC>Customer</loC>
+            </lo>
+            <lo tK="label.customer360.param.hint" maxL="200">
+                <loC>Customer Name</loC>
+            </lo>
+            <lo tK="label.customerInsight.name" maxL="200">
+                <loC>Business Insights</loC>
+            </lo>
+            <lo tK="label.customerInsight.param.hint" maxL="200">
+                <loC>Customer Name</loC>
+            </lo>
+            <lo tK="label.customerInsight.param.name" maxL="200">
+                <loC>Customer</loC>
+            </lo>
+            <lo tK="label.pdtRecommend.col.cVol" maxL="200">
+                <loC>Cross Selling Volume</loC>
+            </lo>
+            <lo tK="label.pdtRecommend.title" maxL="200">
+                <loC>Product Recommendation</loC>
+            </lo>
+            <lo tK="label.bundleProduct.col.product" maxL="200">
+                <loC>Correlated Products</loC>
+            </lo>
+            <lo tK="label.pdtRecommend.col.rProduct" maxL="200">
+                <loC>Recommended Product</loC>
+            </lo>
+            <lo tK="label.pdtRecommend.col.pProduct" maxL="200">
+                <loC>Purchased Product</loC>
+            </lo>
+            <lo tK="label.bundleProduct.title" maxL="200">
+                <loC>Mix &amp; Match</loC>
+            </lo>
+            <lo tK="label.bundleProduct.col.percent" maxL="200">
+                <loC>Sales Volume Percentage</loC>
+            </lo>
+            <lo tK="label.pdtRecommend.col.cPercent" maxL="200">
+                <loC>Cross Selling Percentage</loC>
+            </lo>
+            <lo tK="label.pdtRecommend.col.pVol" maxL="200">
+                <loC>Volume of Purchased Product</loC>
+            </lo>
+            <lo tK="label.bundleProduct.col.vol" maxL="200">
+                <loC>Sales Volume</loC>
+            </lo>
+        </loGrp>
+    </body>
+</slim>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<slim xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" slimEd="1.0" xsi:schemaLocation="www.sap.com/slim slim.xsd">
+    <header>
+        <locale>
+            <develLc>EN</develLc>
+            <contentLc>EN</contentLc>
+        </locale>
+        <objType>line</objType>
+        <domain>AW</domain>
+        <contentName>OCC_APP_REPORT_INVENTORY_TURNOVER</contentName>
+        <description>A full featured SLIM-file</description>
+        <defaults>
+            <maxL>255</maxL>
+        </defaults>
+        <workflow>
+            <contacts>
+                <developer/>
+            </contacts>
+        </workflow>
+    </header>
+    <body>
+        <loGrp grpClass="textType" grpName="XFLD">
+            <lo tK="label.Inventory.InventoryTurnover" maxL="60">
+                <loC>Inventory Turnover</loC>
+            </lo>
+            <lo tK="label.inventoryTurnover.column.averageInventoryAmount" maxL="200">
+                <loC>Average Inventory Cost</loC>
+            </lo>
+            <lo tK="label.inventoryTurnover.column.brandName" maxL="200">
+                <loC>Brand</loC>
+            </lo>
+            <lo tK="label.inventoryTurnover.column.categoryName" maxL="200">
+                <loC>Product Category</loC>
+            </lo>
+            <lo tK="label.inventoryTurnover.column.cogs" maxL="200">
+                <loC>COGS</loC>
+            </lo>
+            <lo tK="label.inventoryTurnover.column.grossMargin" maxL="200">
+                <loC>Gross Profit %</loC>
+            </lo>
+            <lo tK="label.inventoryTurnover.column.inventoryTurnover" maxL="200">
+                <loC>Inventory Turnover</loC>
+            </lo>
+            <lo tK="label.inventoryTurnover.column.investTurnover" maxL="200">
+                <loC>Investment Turnover</loC>
+            </lo>
+            <lo tK="label.inventoryTurnover.column.salesRevenue" maxL="200">
+                <loC>Sales Revenue</loC>
+            </lo>
+            <lo tK="label.inventoryTurnover.column.skuName" maxL="200">
+                <loC>Product</loC>
+            </lo>
+            <lo tK="label.inventoryTurnover.column.whsName" maxL="200">
+                <loC>Warehouse</loC>
+            </lo>
+            <lo tK="label.inventoryTurnover.daterange" maxL="200">
+                <loC>Date Range</loC>
+            </lo>
+            <lo tK="label.inventoryTurnover.filter.brand" maxL="200">
+                <loC>Brand</loC>
+            </lo>
+            <lo tK="label.inventoryTurnover.filter.product" maxL="200">
+                <loC>Product</loC>
+            </lo>
+            <lo tK="label.inventoryTurnover.filter.productCategory" maxL="200">
+                <loC>Product Category</loC>
+            </lo>
+            <lo tK="label.inventoryTurnover.filter.warehouse" maxL="200">
+                <loC>Warehouse</loC>
+            </lo>
+            <lo tK="label.inventoryTurnover.value.null" maxL="200">
+                <loC>Value not set</loC>
+            </lo>
+        </loGrp>
+    </body>
+</slim>

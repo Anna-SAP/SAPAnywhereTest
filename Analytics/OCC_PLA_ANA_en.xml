@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<slim xmlns="www.sap.com/slim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" slimEd="1.0" xsi:schemaLocation="www.sap.com/slim slim.xsd">
+    <header>
+        <locale>
+            <develLc>EN</develLc>
+            <contentLc>EN</contentLc>
+        </locale>
+        <objType>line</objType>
+        <collection>OCC_PLA_ANA</collection>
+        <domain>AW</domain>
+        <contentName>OCC_PLA_ANA</contentName>
+        <description>A full featured SLIM-file for OCC Analytics</description>
+        <defaults>
+            <maxL>255</maxL>
+        </defaults>
+        <workflow>
+            <contacts>
+                <developer>i061134</developer>
+            </contacts>
+        </workflow>
+        <applSpec tK="DATE">
+            <ASD>2014-12-06</ASD>
+        </applSpec>
+        <applSpec tK="VERSION">
+            <ASD>1</ASD>
+        </applSpec>
+    </header>
+    <body>
+        <loGrp grpClass="textType" grpName="XMSG">
+            <lo tK="P150AD0001">
+                <loC>Data source type "{0}" is not supported.</loC>
+            </lo>
+            <lo tK="P150AD0002">
+                <loC>Failed to update this data set definition as it is predefined by SAP Anywhere.</loC>
+            </lo>
+            <lo tK="P150AD0003">
+                <loC>Error occurred while reading data set definition file.</loC>
+            </lo>
+            <lo tK="P150AD0005">
+                <loC>Internal error occurred while validating the data set definition.</loC>
+            </lo>
+            <lo tK="P150AD0006">
+                <loC>Error occurred while parsing data set definition.</loC>
+            </lo>
+            <lo tK="P150AD0007">
+                <loC>Data set definition was not successfully saved.</loC>
+            </lo>
+            <lo tK="P150AD0008">
+                <loC>No data set "{0}" has been found. Please define it.</loC>
+            </lo>
+            <lo tK="P150AD0009">
+                <loC>Error occurred while validating report definition.</loC>
+            </lo>
+            <lo tK="P150AD0010">
+                <loC>IO error occurred while reading report definition file.</loC>
+            </lo>
+            <lo tK="P150AD0011">
+                <loC>Error occurred while parsing report definition file.</loC>
+            </lo>
+            <lo tK="P150AD0012">
+                <loC>Report definition element is unknown.</loC>
+            </lo>
+            <lo tK="P150AD0013">
+                <loC>Report definition widget "{0}" is unknown.</loC>
+            </lo>
+            <lo tK="P150AD0014">
+                <loC>Error while parsing report definition widget.</loC>
+            </lo>
+            <lo tK="P150AD0015">
+                <loC>The report no longer exists. It may have been deleted by another user.</loC>
+            </lo>
+            <lo tK="P150AD0016">
+                <loC>Please set a default value to the parameter {0}.</loC>
+            </lo>
+            <lo tK="P150AD0017">
+                <loC>Error occurred while executing data set "{0}".</loC>
+            </lo>
+            <lo tK="P150AD0018">
+                <loC>Error occurred while executing native query "{0}".</loC>
+            </lo>
+            <lo tK="P150AD0019">
+                <loC>Error occurred while reading native query result.</loC>
+            </lo>
+            <lo tK="P150AD0020">
+                <loC>Please set a default value for the data set parameter "{0}".</loC>
+            </lo>
+            <lo tK="P150AD0021">
+                <loC>Expression function "{0}" is already registered.</loC>
+            </lo>
+            <lo tK="P150AD0022">
+                <loC>Error occurred while parsing expression "{0}".</loC>
+            </lo>
+            <lo tK="P150AD0023">
+                <loC>Error occurred while evaluating the execution of expression "{0}".</loC>
+            </lo>
+            <lo tK="P150AD0026">
+                <loC>Failed to parse the data type. This is an unknown data type.</loC>
+            </lo>
+            <lo tK="P150AD0027">
+                <loC>Converting the value of class "{0}" to data type "{1}" is not supported.</loC>
+            </lo>
+            <lo tK="P150AD0028">
+                <loC>Parsing string to data type "{0}" is not supported.</loC>
+            </lo>
+            <lo tK="P150AD0030">
+                <loC>Report parameter choices can only be bound to one data set column.</loC>
+            </lo>
+            <lo tK="P150AD0031">
+                <loC>Value {0} cannot be entered. Report parameter "{1}" only supports values from the selected data set column.</loC>
+            </lo>
+            <lo tK="P150AD0032">
+                <loC>Binding expression "{0}" is invalid.</loC>
+            </lo>
+            <lo tK="P150AD0033">
+                <loC>Binding invalid. You must define data set "{0}" first.</loC>
+            </lo>
+            <lo tK="P150AD0034">
+                <loC>Converting value {0} to data type "{1}" is not supported.</loC>
+            </lo>
+            <lo tK="P150AD0035">
+                <loC>Error occurred while binding business object:"{0}".</loC>
+            </lo>
+            <lo tK="P150AD0036">
+                <loC>Error occurred while setting the default value for parameter {0}. If you want it to return to multiple values, please set multi-choice to true.</loC>
+            </lo>
+            <lo tK="P150AE0001">
+                <loC>KPI widget "{0}" does not have an actual value.</loC>
+            </lo>
+            <lo tK="P150AE0002">
+                <loC>KPI widget "{0}" does not have a trend value.</loC>
+            </lo>
+            <lo tK="P150AE0003">
+                <loC>KPI widget "{0}" does not have a goal value.</loC>
+            </lo>
+            <lo tK="P150AE0004">
+                <loC>Scorecard widget "{0}" has no content. Please enter a KPI or Count.</loC>
+            </lo>
+            <lo tK="P150AE0005">
+                <loC>Count widget "{0}" has no content. Please enter a value.</loC>
+            </lo>
+            <lo tK="P150AE0006">
+                <loC>List widget "{0}" has no content. Please enter a value.</loC>
+            </lo>
+            <lo tK="P150AE0007">
+                <loC>Master data widget "{0}" has no name element.</loC>
+            </lo>
+            <lo tK="P150AE0008">
+                <loC>Please define at least one measure for chart widget "{0}".</loC>
+            </lo>
+            <lo tK="P150AE0009">
+                <loC>Please define at least one dimension for chart widget "{0}".</loC>
+            </lo>
+            <lo tK="P150AE0010">
+                <loC>Please bind table widget "{0}" to a data set.</loC>
+            </lo>
+            <lo tK="P150AE0020">
+                <loC>Error occurred in report definition for the data. Please bind chart widget "{0}" to a data set.</loC>
+            </lo>
+            <lo tK="P150AE0021">
+                <loC>Error occurred in report definition for the data. Please bind the drill down of count widget "{0}" to a data set.</loC>
+            </lo>
+            <lo tK="P150AE0022">
+                <loC>Error occurred in report definition for the data. Please bind master data widget "{0}" to a column of data set.</loC>
+            </lo>
+            <lo tK="P150AE0023">
+                <loC>Error occurred in report definition about data. Please bind table widget "{0}" to a data set.</loC>
+            </lo>
+            <lo tK="P150AE0025">
+                <loC>Error occurred in report definition about data. Please bind list widget "{0}" to a data set.</loC>
+            </lo>
+            <lo tK="P150AE0030">
+                <loC>Description error: "{1}" occurred in getting widget "{0}".</loC>
+            </lo>
+            <lo tK="P150AE0031">
+                <loC>Report definition error: You cannot define more than one table.</loC>
+            </lo>
+            <lo tK="P150AE0032">
+                <loC>Report definition error: You cannot define more than one chart.</loC>
+            </lo>
+            <lo tK="P150AE0033">
+                <loC>Dimension in chart incorrectly defined</loC>
+            </lo>
+            <lo tK="P150AE0034">
+                <loC>Measure in chart incorrectly defined</loC>
+            </lo>
+            <lo tK="P150BE0001">
+                <loC>Failed to delete dashboards: "{0}"</loC>
+            </lo>
+            <lo tK="P150AD0037">
+                <loC>Error occurred while loading the definition file of report "{0}".</loC>
+            </lo>
+            <lo tK="P150AD0038">
+                <loC>Cannot find the definition file of report "{0}".</loC>
+            </lo>
+            <lo tK="P150AD0039">
+                <loC>Failed to construct internal storage objects.</loC>
+            </lo>
+            <lo tK="P150AD0040">
+                <loC>Report "{0}" already exists.</loC>
+            </lo>
+            <lo tK="P150AD0041">
+                <loC>Namespace "{0}" is not allowed. It cannot start with "com.sap.".</loC>
+            </lo>
+            <lo tK="P150AD0042">
+                <loC>Sort type not supported.</loC>
+            </lo>
+            <lo tK="P150PA0001">
+                <loC>Cannot add the predefined dashboard "{0}"</loC>
+            </lo>
+            <lo tK="P150PA0002">
+                <loC>Cannot delete the predefined dashboard "{0}"</loC>
+            </lo>
+            <lo tK="P150PA0003">
+                <loC>Cannot update the predefined dashboard "{0}"</loC>
+            </lo>
+            <lo tK="P150PA0004">
+                <loC>Cannot find authorization management configuration.</loC>
+            </lo>
+            <lo tK="P150PA0011">
+                <loC>You are not authorized to enter Dashboards.</loC>
+            </lo>
+            <lo tK="P150PA0012">
+                <loC>You are not authorized to add dashboard "{0}".</loC>
+            </lo>
+            <lo tK="P150PA0013">
+                <loC>You are not authorized to delete dashboard "{0}".</loC>
+            </lo>
+            <lo tK="P150PA0014">
+                <loC>You are not authorized to update dashboard "{0}".</loC>
+            </lo>
+            <lo tK="P150PA0015">
+                <loC>You are not authorized to read dashboard "{0}".</loC>
+            </lo>
+            <lo tK="P150PA0021">
+                <loC>You are not authorized to enter Reports.</loC>
+            </lo>
+            <lo tK="P150PA0022">
+                <loC>You are not authorized to add report "{0}".</loC>
+            </lo>
+            <lo tK="P150PA0023">
+                <loC>You are not authorized to delete report "{0}".</loC>
+            </lo>
+            <lo tK="P150PA0024">
+                <loC>You are not authorized to update report "{0}".</loC>
+            </lo>
+            <lo tK="P150PA0025">
+                <loC>You are not authorized to read report "{0}".</loC>
+            </lo>
+            <lo tK="P150PA0026">
+                <loC>Error occurred while coverting report parameter value.</loC>
+            </lo>
+            <lo tK="P150PA0027">
+                <loC>The report parameter value converter is invalid.</loC>
+            </lo>
+            <lo tK="P150AD0043">
+                <loC>Failed to upload this file as type "{0}" is not supported in Reports.</loC>
+            </lo>
+            <lo tK="P150AD0044">
+                <loC>This widget is currently used by Dashboard "{0}". If deleted, no data from it will be displayed on the linked dashboards. Are you sure you want to continue?</loC>
+            </lo>
+            <lo tK="P150AD0048">
+                <loC>Failed to upload this file. Please add a title for the file.</loC>
+            </lo>
+            <lo tK="P150AD0049">
+                <loC>Failed to upload this file. A category must be chosen from "Finance, CRM, Sales, Inventory, Service, Others".</loC>
+            </lo>
+            <lo tK="P150AD0060">
+                <loC>Failed to execute report as report definition file (srdl.) contains unsupported BO-property's condition "{0}".</loC>
+            </lo>
+            <lo tK="P150AD0061">
+                <loC>Failed to execute report as operator "{0}" is not supported in BO-property condition of report definition file(srdl).</loC>
+            </lo>
+            <lo tK="P150AD0063">
+                <loC>Failed to execute report as the image wrapper object cannot be initiated.</loC>
+            </lo>
+            <lo tK="P150AD0064">
+                <loC>Failed to read dataset definition as error occurred while defining optional parameter {0}.</loC>
+            </lo>
+            <lo tK="P150AD0065">
+                <loC>Failed to read dataset definition as there is more than 1 optional parameter in [] {0}.</loC>
+            </lo>
+            <lo tK="P150AD0066">
+                <loC>Failed to read dataset definition as not all optional parameters {0} are in [].</loC>
+            </lo>
+            <lo tK="P150AD0067">
+                <loC>Failed to execute report. Although the opitional parameter is defined, the choice element for the report parameter is incorrect or undefined.</loC>
+            </lo>
+            <lo tK="P150AD0068">
+                <loC>Report execution failed. Technical scope required to directly execute dataset type {0} is not supported.</loC>
+            </lo>
+            <lo tK="P150AD0069">
+                <loC>Report execution failed as dataset {0} not found.</loC>
+            </lo>
+            <lo tK="P150AD0070">
+                <loC>Report execution failed as you can only bind the filter condition {0} to columns when you carry out actions for business object lists.</loC>
+            </lo>
+            <lo tK="P150AE0036">
+                <loC>Customized widget file path cannot be empty.</loC>
+            </lo>
+            <lo tK="P150AE0037">
+                <loC>Column binding is not supported.</loC>
+            </lo>
+            <lo tK="P150AD0071">
+                <loC>The type you choose is not supported.</loC>
+            </lo>
+            <lo tK="P150AD0072">
+                <loC>Cannot find external service: {0}.</loC>
+            </lo>
+            <lo tK="P150AD0073">
+                <loC>Cannot find the semantic layer service.</loC>
+            </lo>
+            <lo tK="P150AD0074">
+                <loC>Something wrong with the semantic layer service's function: {0}.</loC>
+            </lo>
+            <lo tK="P150AD0075">
+                <loC>Field {0} does not exist.</loC>
+            </lo>
+            <lo tK="P150AD0076">
+                <loC>The format settings in Business Settings is not configured.</loC>
+            </lo>
+            <lo tK="P150AD0077">
+                <loC>Roles and authorizations are not configured.</loC>
+            </lo>
+            <lo tK="P150AD0079">
+                <loC>Report definition was not successfully saved.</loC>
+            </lo>
+            <lo tK="P150AD0080">
+                <loC>Internal error. Failed to select filter: {0}.</loC>
+            </lo>
+            <lo tK="P150AD0081">
+                <loC>Please select at least one column to display data.</loC>
+            </lo>
+            <lo tK="P150AD0082">
+                <loC>The report editor does not support this source type: {0}.</loC>
+            </lo>
+            <lo tK="P150AD0084">
+                <loC>The name already exists. Please enter another name.</loC>
+            </lo>
+            <lo tK="P150AD0085">
+                <loC>Local report {0} does not exist.</loC>
+            </lo>
+            <lo tK="P150AD0086">
+                <loC>Failed to generate a query.</loC>
+            </lo>
+            <lo tK="P150AD0087">
+                <loC>Property {0} in your expression does not exist.</loC>
+            </lo>
+            <lo tK="P150AD0088">
+                <loC>This report type is not supported in current operation.</loC>
+            </lo>
+        </loGrp>
+        <loGrp grpClass="textType" grpName="XFLD">
+            <lo tK="TYPE.BOOLEAN.YES" maxL="20">
+                <loC>yes</loC>
+            </lo>
+            <lo tK="TYPE.BOOLEAN.NO" maxL="20">
+                <loC>no</loC>
+            </lo>
+            <lo tK="TYPE.YEAR.SUFFIX" maxL="20">
+                <loC>year</loC>
+            </lo>
+            <lo tK="MST.LATINF.NULLINF" maxL="20">
+                <loC>No purchase yet</loC>
+            </lo>
+            <lo tK="MST.LASTINF.PCS.INITIAL" maxL="20">
+                <loC>Last purchase:</loC>
+            </lo>
+            <lo tK="MST.LASTINF.PCS.SNGTAIL" maxL="20">
+                <loC>day ago</loC>
+            </lo>
+            <lo tK="MST.LASTINF.PCS.MTLTAIL" maxL="20">
+                <loC>days ago</loC>
+            </lo>
+            <lo tK="MST.LASTINF.TODAY" maxL="20">
+                <loC>Today</loC>
+            </lo>
+            <lo tK="label.Dashboard" maxL="20">
+                <loC>Dashboard</loC>
+            </lo>
+            <lo tK="label.Report.export" maxL="20">
+                <loC>Report {0}</loC>
+            </lo>
+            <lo tK="label.Report" maxL="20">
+                <loC>Report</loC>
+            </lo>
+        </loGrp>
+    </body>
+</slim>
