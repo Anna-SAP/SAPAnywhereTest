@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><slim xmlns="www.sap.com/slim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" slimEd="1.0" xsi:schemaLocation="www.sap.com/slim slim.xsd">
+    <header>
+        <locale>
+            <develLc>EN</develLc>
+            <contentLc>zh_CN</contentLc>
+        </locale>
+        <objType>line</objType>
+        <collection>ANYWHERE_OCC</collection>
+        <domain>AW</domain>
+        <contentName>OCC_APP_REPORT_OMS</contentName>
+        <description>A full featured SLIM-file</description>
+        <defaults>
+            <maxL>255</maxL>
+        </defaults>
+        <workflow>
+            <contacts>
+                <developer>I304957</developer>
+            </contacts>
+        </workflow>
+    </header>
+    <body>
+        <loGrp grpClass="textType" grpName="XFLD">
+            <lo maxL="200" tK="label.salesAnalysis.title">
+                <loC>销售分析</loC>
+            </lo>
+            <lo maxL="200" tK="label.salesAnalysis.period">
+                <loC>期间</loC>
+            </lo>
+            <lo maxL="200" tK="label.salesAnalysis.documentNo">
+                <loC>订单编号</loC>
+            </lo>
+            <lo maxL="200" tK="label.salesAnalysis.netAmount">
+                <loC>净总额</loC>
+            </lo>
+            <lo maxL="200" tK="label.salesAnalysis.grossAmount">
+                <loC>总额</loC>
+            </lo>
+            <lo maxL="200" tK="label.salesAnalysis.grossProfit">
+                <loC>总利润</loC>
+            </lo>
+            <lo maxL="200" tK="label.salesAnalysis.yAxisAmount">
+                <loC>金额</loC>
+            </lo>
+            <lo maxL="200" tK="label.salesAnalysis.customerGroup">
+                <loC>客户组</loC>
+            </lo>
+            <lo maxL="200" tK="label.salesAnalysis.salesPerson">
+                <loC>销售员工</loC>
+            </lo>
+            <lo maxL="200" tK="label.salesAnalysis.channel">
+                <loC>渠道</loC>
+            </lo>
+            <lo maxL="200" tK="label.salesAnalysis.orderStatus">
+                <loC>订单总状态</loC>
+            </lo>
+            <lo maxL="200" tK="label.salesAnalysis.customerType">
+                <loC>客户类型</loC>
+            </lo>
+            <lo maxL="200" tK="label.salesAnalysis.startDate">
+                <loC>起始日期</loC>
+            </lo>
+            <lo maxL="200" tK="label.salesAnalysis.endDate">
+                <loC>结束日期</loC>
+            </lo>
+            <lo maxL="200" tK="label.salesSummary.title">
+                <loC>销售汇总</loC>
+            </lo>
+            <lo maxL="200" tK="label.salesSummary.docDate">
+                <loC>订单日期</loC>
+            </lo>
+            <lo maxL="200" tK="label.salesSummary.documentNo">
+                <loC>订单编号</loC>
+            </lo>
+            <lo maxL="200" tK="label.salesSummary.customerName">
+                <loC>客户名称</loC>
+            </lo>
+            <lo maxL="200" tK="label.salesSummary.status">
+                <loC>订单状态</loC>
+            </lo>
+            <lo maxL="200" tK="label.salesSummary.emName">
+                <loC>销售员工</loC>
+            </lo>
+            <lo maxL="200" tK="label.salesSummary.netAmount">
+                <loC>净总额</loC>
+            </lo>
+            <lo maxL="200" tK="label.salesSummary.taxAmount">
+                <loC>税额</loC>
+            </lo>
+            <lo maxL="200" tK="label.salesSummary.grossAmount">
+                <loC>总额</loC>
+            </lo>
+            <lo maxL="200" tK="label.salesSummary.paidAmount">
+                <loC>付款额</loC>
+            </lo>
+            <lo maxL="200" tK="label.salesSummary.customerGroup">
+                <loC>客户组</loC>
+            </lo>
+            <lo maxL="200" tK="label.salesSummary.salesPerson">
+                <loC>销售员工</loC>
+            </lo>
+            <lo maxL="200" tK="label.salesSummary.channel">
+                <loC>渠道</loC>
+            </lo>
+            <lo maxL="200" tK="label.salesSummary.orderStatus">
+                <loC>订单总状态</loC>
+            </lo>
+            <lo maxL="200" tK="label.salesSummary.customerType">
+                <loC>客户类型</loC>
+            </lo>
+            <lo maxL="200" tK="label.salesSummary.startDate">
+                <loC>开始时间</loC>
+            </lo>
+            <lo maxL="200" tK="label.salesSummary.endDate">
+                <loC>结束时间</loC>
+            </lo>
+            <lo maxL="200" tK="label.customer360.customerCode">
+                <loC>客户</loC>
+            </lo>
+            <lo maxL="200" tK="label.recentOrders.title">
+                <loC>近期订单</loC>
+            </lo>
+            <lo maxL="400" tK="label.recentOrders.description">
+                <loC>它按时间顺序罗列了近期的订单。在它上面点击各个订单，还能分别进入它们的基础资料页面。</loC>
+            </lo>
+            <lo maxL="200" tK="label.top5products.title">
+                <loC>销量前5名产品</loC>
+            </lo>
+            <lo maxL="400" tK="label.top5products.description">
+                <loC>这个柱状图图表中提供了销量排名前五的产品和它们的销售金额。</loC>
+            </lo>
+            <lo maxL="200" tK="label.top5products.productName">
+                <loC>产品名称</loC>
+            </lo>
+            <lo maxL="200" tK="label.top5products.maxDate">
+                <loC>最新销售日期</loC>
+            </lo>
+            <lo maxL="200" tK="label.ranking.title">
+                <loC>排名</loC>
+            </lo>
+            <lo maxL="400" tK="label.ranking.description">
+                <loC>它提供了一段固定时间内两个维度的客户排名情况：收入和退货率。收入即卖家已出具销售发票的订单总金额，收入越高，排名就越高；退货率即退货金额和订单总金额的比值，退货率越高，则排名就越高。</loC>
+            </lo>
+            <lo maxL="200" tK="label.ranking.revenue">
+                <loC>收入</loC>
+            </lo>
+            <lo maxL="200" tK="label.ranking.returnRate">
+                <loC>退货率</loC>
+            </lo>
+            <lo maxL="200" tK="label.ranking.number">
+                <loC>第</loC>
+            </lo>
+            <lo maxL="200" tK="label.ranking.thisYear">
+                <loC>今年</loC>
+            </lo>
+            <lo maxL="200" tK="label.orderedVsReturned.title">
+                <loC>近12个月内销售订单和退货情况</loC>
+            </lo>
+            <lo maxL="400" tK="label.orderedVsReturned.description">
+                <loC>该折线图反映了近12个月内销售订单和退货的情况。它能帮助你你能清晰地了解订单和退货的金额以及它们的变化趋势。</loC>
+            </lo>
+            <lo maxL="200" tK="label.orderedVsReturned.from">
+                <loC>自</loC>
+            </lo>
+            <lo maxL="200" tK="label.orderedVsReturned.to">
+                <loC>至</loC>
+            </lo>
+            <lo maxL="200" tK="label.orderedVsReturned.amount">
+                <loC>金额</loC>
+            </lo>
+            <lo maxL="200" tK="label.orderedVsReturned.date">
+                <loC>日期</loC>
+            </lo>
+            <lo maxL="200" tK="label.orderedVsReturned.ordered">
+                <loC>订单金额</loC>
+            </lo>
+            <lo maxL="200" tK="label.orderedVsReturned.returned">
+                <loC>退货金额</loC>
+            </lo>
+            <lo maxL="200" tK="label.totalOrderVolume.title">
+                <loC>客户订单总额</loC>
+            </lo>
+            <lo maxL="400" tK="label.totalOrderVolume.description">
+                <loC>它提供了一个客户或一组客户在一段固定时间内所下订单的总金额。</loC>
+            </lo>
+            <lo maxL="200" tK="label.totalOrderVolume.fromLastYear">
+                <loC>较去年同比增长</loC>
+            </lo>
+            <lo maxL="200" tK="label.totalOrderVolume.fromLastMonth">
+                <loC>较上个月环比增长</loC>
+            </lo>
+            <lo maxL="200" tK="label.totalOrderVolume.thisMonth">
+                <loC>本月</loC>
+            </lo>
+            <lo maxL="200" tK="label.alert.title">
+                <loC>提醒</loC>
+            </lo>
+            <lo maxL="200" tK="label.alert.description">
+                <loC>它罗列了一段固定时间内的未清订单和未发货订单的数量，未支付订单和已退货订单的金额，以及客服消息的提醒。</loC>
+            </lo>
+            <lo maxL="200" tK="label.alert.openOrder">
+                <loC>未清订单</loC>
+            </lo>
+            <lo maxL="200" tK="label.alert.undelivered">
+                <loC>未发货</loC>
+            </lo>
+            <lo maxL="200" tK="label.alert.exceedingClose.openOrder">
+                <loC>超过收货截止日期</loC>
+            </lo>
+            <lo maxL="200" tK="label.alert.exceedingClose.undelivered">
+                <loC>超过收货截止日期</loC>
+            </lo>
+            <lo maxL="200" tK="label.alert.unpaied">
+                <loC>未支付</loC>
+            </lo>
+            <lo maxL="200" tK="label.alert.overdue">
+                <loC>逾期未支付</loC>
+            </lo>
+            <lo maxL="200" tK="label.alert.return">
+                <loC>已退货</loC>
+            </lo>
+            <lo maxL="200" tK="label.detailedPayments.title">
+                <loC>支付方式交易明细</loC>
+            </lo>
+            <lo maxL="200" tK="label.detailedPayments.customerName">
+                <loC>客户名称</loC>
+            </lo>
+            <lo maxL="200" tK="label.detailedPayments.startDate">
+                <loC>起始日期</loC>
+            </lo>
+            <lo maxL="200" tK="label.detailedPayments.endDate">
+                <loC>结束日期</loC>
+            </lo>
+            <lo maxL="200" tK="label.productSales.title">
+                <loC>产品销售</loC>
+            </lo>
+            <lo maxL="200" tK="label.revenueReport.title">
+                <loC>门店销售总额</loC>
+            </lo>
+            <lo maxL="200" tK="label.revenueReport.store">
+                <loC>门店</loC>
+            </lo>
+            <lo maxL="200" tK="label.revenueReport.storeName">
+                <loC>门店名称</loC>
+            </lo>
+            <lo maxL="200" tK="label.revenueReport.soldVolume">
+                <loC>销售额</loC>
+            </lo>
+            <lo maxL="200" tK="label.revenueReport.refundVolume">
+                <loC>退款额</loC>
+            </lo>
+            <lo maxL="200" tK="label.revenueReport.refundItem">
+                <loC>退货数量</loC>
+            </lo>
+            <lo maxL="200" tK="label.revenueReport.soldItem">
+                <loC>销售数量</loC>
+            </lo>
+            <lo maxL="200" tK="label.detailedPayments.docType">
+                <loC>单据类型</loC>
+            </lo>
+            <lo maxL="200" tK="label.detailedPayments.docType.payment">
+                <loC>收付款单</loC>
+            </lo>
+            <lo maxL="200" tK="label.detailedPayments.docType.prepayment">
+                <loC>预收账款</loC>
+            </lo>
+            <lo maxL="200" tK="label.detailedPayments.paymentMethod">
+                <loC>支付方式</loC>
+            </lo>
+            <lo maxL="200" tK="label.customerBalance.desc">
+                <loC>信用额度- 未付款发票金额 + 预付款</loC>
+            </lo>
+            <lo maxL="200" tK="label.customerBalance.description">
+                <loC>它在信用额度上减去未付款发票金额并加上预付款金额，提供了该客户实际剩余的可用信用额度。</loC>
+            </lo>
+            <lo maxL="200" tK="label.customerBalance.title">
+                <loC>客户信用余额</loC>
+            </lo>
+            <lo maxL="200" tK="label.targetGroups.description">
+                <loC>它列举了当前客户所属的一些最新创建的目标组。</loC>
+            </lo>
+            <lo maxL="200" tK="label.targetGroups.title">
+                <loC>目标组</loC>
+            </lo>
+            <lo maxL="200" tK="label.totalOrderVolume.since">
+                <loC>自从</loC>
+            </lo>
+            <lo maxL="200" tK="label.salesAnalysisForMobile.channel">
+                <loC>渠道</loC>
+            </lo>
+            <lo maxL="200" tK="label.salesAnalysisForMobile.date">
+                <loC>日期</loC>
+            </lo>
+            <lo maxL="200" tK="label.salesAnalysisForMobile.grossAmountLC">
+                <loC>总价 (本币)</loC>
+            </lo>
+            <lo maxL="200" tK="label.salesAnalysisForMobile.title">
+                <loC>销售分析</loC>
+            </lo>
+            <lo maxL="200" tK="label.salesAnalysisForMobile.totalQuantity">
+                <loC>售货总数量</loC>
+            </lo>
+            <lo maxL="200" tK="label.salesSummary.fromToDate">
+                <loC>日期范围</loC>
+            </lo>
+            <lo maxL="200" tK="label.top5customers.channel">
+                <loC>销售渠道</loC>
+            </lo>
+            <lo maxL="200" tK="label.top5customers.customerCode">
+                <loC>客户编号</loC>
+            </lo>
+            <lo maxL="200" tK="label.top5customers.customerName">
+                <loC>客户名称</loC>
+            </lo>
+            <lo maxL="400" tK="label.top5customers.description">
+                <loC>这个柱状图列出了订单总金额最多的前5名客户和他们各自的订单总额及净总额。</loC>
+            </lo>
+            <lo maxL="200" tK="label.top5customers.grossAmount">
+                <loC>总额</loC>
+            </lo>
+            <lo maxL="200" tK="label.top5customers.netAmount">
+                <loC>净总额</loC>
+            </lo>
+            <lo maxL="200" tK="label.top5customers.title">
+                <loC>订单总额前5名客户</loC>
+            </lo>
+            <lo maxL="200" tK="label.top5products.channel">
+                <loC>销售渠道</loC>
+            </lo>
+            <lo maxL="200" tK="label.top5products.grossAmount">
+                <loC>总额</loC>
+            </lo>
+            <lo maxL="200" tK="label.top5products.netAmount">
+                <loC>净总额</loC>
+            </lo>
+            <lo maxL="200" tK="label.top5products.productCode">
+                <loC>产品编号</loC>
+            </lo>
+            <lo maxL="200" tK="label.socialMessages.description">
+                <loC>它显示了一个客户或一组客户最新的社交媒体账动态。你还可以跳转到另一个界面去查看这些客户在社交媒体上所作的全部评论。</loC>
+            </lo>
+            <lo maxL="200" tK="label.socialMessages.title">
+                <loC>社交媒体动态</loC>
+            </lo>
+            <lo maxL="200" tK="label.Customer.value.null">
+                <loC>未定义值</loC>
+            </lo>
+            <lo maxL="200" tK="label.CustomerGroup.value.null">
+                <loC>未定义值</loC>
+            </lo>
+            <lo maxL="200" tK="label.Employee.value.null">
+                <loC>未定义值</loC>
+            </lo>
+            <lo maxL="200" tK="label.Team.value.null">
+                <loC>未定义值</loC>
+            </lo>
+            <lo maxL="200" tK="label.Warehouse.value.null">
+                <loC>未定义值</loC>
+            </lo>
+            <lo maxL="200" tK="label.paymentBehavior.amount">
+                <loC>金额</loC>
+            </lo>
+            <lo maxL="200" tK="label.paymentBehavior.category">
+                <loC>类别</loC>
+            </lo>
+            <lo maxL="200" tK="label.paymentBehavior.customerGroup">
+                <loC>客户组</loC>
+            </lo>
+            <lo maxL="200" tK="label.paymentBehavior.industry">
+                <loC>客户行业</loC>
+            </lo>
+            <lo maxL="200" tK="label.paymentBehavior.paid">
+                <loC>已付金额</loC>
+            </lo>
+            <lo maxL="200" tK="label.paymentBehavior.paymentTerm">
+                <loC>支付条款</loC>
+            </lo>
+            <lo maxL="200" tK="label.paymentBehavior.title">
+                <loC>支付行为</loC>
+            </lo>
+            <lo maxL="200" tK="label.paymentBehavior.unpdNoovdu">
+                <loC>未付未到期金额</loC>
+            </lo>
+            <lo maxL="200" tK="label.paymentBehavior.unpdOvdu">
+                <loC>未付已到期金额</loC>
+            </lo>
+            <lo maxL="200" tK="label.salesAnalysis.grossProfitMargin">
+                <loC>总利润%</loC>
+            </lo>
+            <lo maxL="200" tK="label.customerFeedsTagCloud.count">
+                <loC>词频计数</loC>
+            </lo>
+            <lo maxL="200" tK="label.customerFeedsTagCloud.description">
+                <loC>这个小部件用于展示客户的社交媒体更新内容中出现的标签。</loC>
+            </lo>
+            <lo maxL="200" tK="label.customerFeedsTagCloud.title">
+                <loC>社交媒体内容标签云</loC>
+            </lo>
+            <lo maxL="200" tK="label.customerFeedsTagCloud.token">
+                <loC>词标签</loC>
+            </lo>
+            <lo maxL="200" tK="label.campaigns.description">
+                <loC>该小部件显示针对特定客户的营销。这使您可以站在客户的角度，了解客户已收到的营销消息。</loC>
+            </lo>
+            <lo maxL="200" tK="label.campaigns.title">
+                <loC>营销</loC>
+            </lo>
+        </loGrp>
+    </body>
+</slim>

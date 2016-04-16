@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><slim xmlns="www.sap.com/slim" slimEd="1.0">
+    <header>
+        <locale>
+            <develLc>EN</develLc>
+            <contentLc>en</contentLc>
+        </locale>
+        <objType>line</objType>
+        <collection>BUSMB_SBO_OD20_ANW</collection>
+        <domain>AW</domain>
+        <contentName>BUSMB_SBO_UI_DASHBOARD_OD20_ANW</contentName>
+        <description>SAP Business One Cloud UI Dashboard</description>
+        <defaults>
+            <maxL>255</maxL>
+        </defaults>
+        <workflow>
+            <contacts>
+                <developer>i076652</developer>
+            </contacts>
+        </workflow>
+        <applSpec tK="VERSION">
+            <ASD>1</ASD>
+        </applSpec>
+        <applSpec tK="DATE">
+            <ASD>2014-12-03</ASD>
+        </applSpec>
+    </header>
+    <body>
+        <loGrp grpClass="textType" grpName="XTXT">
+            <lo maxL="60" tK="app.dashboard.DASHBOARD">
+                <loC>Dashboard</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.DASHBOARDCENTER">
+                <loC>Dashboards</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.NEWDASHBOARDNAME">
+                <loC>Sava as a New Dashboard</loC>
+            </lo>
+            <lo maxL="60" tK="app.report.PINVIEWTITLE">
+                <loC>Rename Report</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.REPORTCENTER">
+                <loC>Reports</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.PARAMETER">
+                <loC>Parameter</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.VIEWDATE_DESC">
+                <loC>Last viewed {0} days ago</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.VIEWHOUR_DESC">
+                <loC>Last viewed {0} hours ago</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.NEVERVIEW">
+                <loC>Never viewed</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.JUSTVIEW">
+                <loC>Just viewed</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.PARAM.SETTING.LINK">
+                <loC>Link Widgets to Filters</loC>
+            </lo>ga
+            <lo maxL="60" tK="app.dashboard.DASHBOARDNAME">
+                <loC>Untitled</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.VIEWNAME">
+                <loC>View Name</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.PARAM.ADD">
+                <loC>Add New Filter</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.PARAM.LINK.DESC">
+                <loC>{0} widgets linked to this filter</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.PARAM.LINK.DESC1">
+                <loC>widgets linked to this filter</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.PARAM.NAME">
+                <loC>Name</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.PARAM.HINT">
+                <loC>Description</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.PARAM.TYPE">
+                <loC>Type</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.PARAM.PLEASESELECT">
+                <loC>Please select</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.PARAM.SOURCE">
+                <loC>Subtype</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.PARAM.MULTIVALUE">
+                <loC>Multiple Values</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.MEMBERLIST">
+                <loC>Member List</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.WIDGET.CHART">
+                <loC>Chart</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.WIDGET.COUNT">
+                <loC>Count</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.WIDGET.KPI">
+                <loC>KPI</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.WIDGET.LIST">
+                <loC>List</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.WIDGET.TABLE">
+                <loC>Table</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.WIDGET.SCORECARD">
+                <loC>Scorecard</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.WIDGET.MASTERDATA">
+                <loC>Master Data</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.WIDGET.OTHERS">
+                <loC>Others</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.WIDGET.FINANCE">
+                <loC>Finance</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.WIDGET.CRM">
+                <loC>CRM</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.WIDGET.SALES">
+                <loC>Sales</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.WIDGET.INVENTORY">
+                <loC>Inventory</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.WIDGET.SERVICE">
+                <loC>Service</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.NODATA">
+                <loC>No Data</loC>
+            </lo>
+            <lo maxL="30" tK="app.report.mobile.invAlt.desc">
+                <loC>Top 20 Products with Insufficient Stock</loC>
+            </lo>
+            <lo maxL="30" tK="app.report.mobile.invAlt.idname">
+                <loC>Product Code/Name</loC>
+            </lo>
+            <lo maxL="30" tK="app.report.mobile.invAlt.inStock">
+                <loC>Total In Stock</loC>
+            </lo>
+            <lo maxL="30" tK="app.report.mobile.invAlt.label">
+                <loC>Inventory Quantity</loC>
+            </lo>
+            <lo maxL="30" tK="app.report.mobile.invAlt.more">
+                <loC>There are {0} more products.</loC>
+            </lo>
+            <lo maxL="30" tK="app.report.mobile.invAlt.product">
+                <loC>Products</loC>
+            </lo>
+            <lo maxL="30" tK="app.report.mobile.invAlt.qty">
+                <loC>Quantity</loC>
+            </lo>
+            <lo maxL="30" tK="app.report.mobile.sales.chart">
+                <loC>Sales Trend This Year</loC>
+            </lo>
+            <lo maxL="30" tK="app.report.mobile.sales.daily.q">
+                <loC>Quantity:</loC>
+            </lo>
+            <lo maxL="30" tK="app.report.mobile.sales.daily.t">
+                <loC>Sales Income Today</loC>
+            </lo>
+            <lo maxL="30" tK="app.report.mobile.sales.month.q">
+                <loC>Sales Volume This Month</loC>
+            </lo>
+            <lo maxL="30" tK="app.report.mobile.sales.month.t">
+                <loC>Sales Income This Month</loC>
+            </lo>
+            <lo maxL="30" tK="app.report.mobile.sales.monthlbl">
+                <loC>Month</loC>
+            </lo>
+            <lo maxL="30" tK="app.report.mobile.sales.year.q">
+                <loC>Sales Volume This Year</loC>
+            </lo>
+            <lo maxL="30" tK="app.report.mobile.sales.year.t">
+                <loC>Sales Income This Year</loC>
+            </lo>
+            <lo maxL="256" tK="app.report.mobile.invAlt.warnmsg">
+                <loC>Inventory alert: {0} products are currently understocked.</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.WIDGET.CUSTOMIZED">
+                <loC>Customized Style</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.COPYDASHBOARD">
+                <loC>Copy Dashboard</loC>
+            </lo>
+            <lo maxL="30" tK="app.report.upload">
+                <loC>Upload Report</loC>
+            </lo>
+            <lo maxL="30" tK="app.dashboard.expand">
+                <loC>Expand</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.LINK.LIST">
+                <loC>Update the link to:</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.PARAM.DFTMEMBER">
+                <loC>Default Values</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.PARAM.SELMEMBER">
+                <loC>Value Options</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.PARAM.EMPTY">
+                <loC>Empty</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.PARAM.SELMETHOD">
+                <loC>Selection Options</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.PARAM.SGLSELECT">
+                <loC>Single Value</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.PARAM.ALL">
+                <loC>All</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.PARAM.MULTISECT">
+                <loC>Multiple Values</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.FILTER_CONDITIONS">
+                <loC>Filter Conditions</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.SELECTE_FILTERS">
+                <loC>Select Filters</loC>
+            </lo>
+        </loGrp>
+        <loGrp grpClass="textType" grpName="XBUT">
+            <lo maxL="20" tK="app.dashboard.ACTION.ASSIGN">
+                <loC>Assign</loC>
+            </lo>
+            <lo maxL="20" tK="app.dashboard.SORT.BYNAME">
+                <loC>Sort By Name</loC>
+            </lo>
+            <lo maxL="20" tK="app.dashboard.SORT.BYTYPE">
+                <loC>Sort By Style</loC>
+            </lo>
+            <lo maxL="20" tK="app.dashboard.SORT.BYCATEGORY">
+                <loC>Sort By Category</loC>
+            </lo>
+            <lo maxL="20" tK="app.dashboard.SORT.BYVIEWDATE">
+                <loC>Sort By View Time</loC>
+            </lo>
+            <lo maxL="20" tK="app.dashboard.BYNAME">
+                <loC>By Name</loC>
+            </lo>
+            <lo maxL="20" tK="app.dashboard.BYTYPE">
+                <loC>By Style</loC>
+            </lo>
+            <lo maxL="20" tK="app.dashboard.BYCATEGORY">
+                <loC>By Category</loC>
+            </lo>
+            <lo maxL="20" tK="app.dashboard.BYVIEWDATE">
+                <loC>By View Date</loC>
+            </lo>
+            <lo maxL="20" tK="app.dashboard.CREATENEW">
+                <loC>Create</loC>
+            </lo>
+            <lo maxL="20" tK="app.dashboard.EDIT">
+                <loC>Edit</loC>
+            </lo>
+            <lo maxL="20" tK="app.dashboard.SELECTALL">
+                <loC>Select All</loC>
+            </lo>
+            <lo maxL="20" tK="app.dashboard.IMPORT">
+                <loC>Import</loC>
+            </lo>
+            <lo maxL="20" tK="app.dashboard.NEWVIEW">
+                <loC>New View</loC>
+            </lo>
+            <lo maxL="20" tK="app.dashboard.PARAM.SETTINGTITLE">
+                <loC>Parameter Settings</loC>
+            </lo>
+            <lo maxL="20" tK="app.dashboard.PARAM.SETTING.ADD">
+                <loC>Add Parameter Settings</loC>
+            </lo>
+            <lo maxL="20" tK="app.dashboard.SELECTWIDGET">
+                <loC>Select Widgets</loC>
+            </lo>
+            <lo maxL="20" tK="app.dashboard.EXIT">
+                <loC>Exit</loC>
+            </lo>
+            <lo maxL="20" tK="app.report.EXPORT.DOWNLOAD">
+                <loC>Download File</loC>
+            </lo>
+            <lo maxL="20" tK="app.dashboard.CHOOSEPARAM">
+                <loC>Choose Parameter</loC>
+            </lo>
+            <lo maxL="20" tK="app.dashboard.COPYTO">
+                <loC>Copy</loC>
+            </lo>
+            <lo maxL="20" tK="app.dashboard.SORT.BYINITIAL">
+                <loC>Sort by Initial</loC>
+            </lo>
+            <lo maxL="20" tK="app.report.ACTION.EDIT">
+                <loC>Edit</loC>
+            </lo>
+            <lo maxL="20" tK="app.dashboard.UNLINKBO">
+                <loC>Update Link</loC>
+            </lo>
+            <lo maxL="20" tK="app.dashboard.LINKBO">
+                <loC>Link {0} to This Dashboard</loC>
+            </lo>
+            <lo maxL="20" tK="app.dashboard.ADDWIDGET">
+                <loC>Add widget</loC>
+            </lo>
+        </loGrp>
+        <loGrp grpClass="textType" grpName="XMSG">
+            <lo maxL="100" tK="app.dashboard.PIN.SUCCESS">
+                <loC>Pinned to Homepage</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.PIN.FAIL">
+                <loC>Failed to pin to Homepage due to an unexpected error. Please try again.</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.UNPIN.SUCCESS">
+                <loC>Unpinned from Homepage</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.UNPIN.FAIL">
+                <loC>Failed to unpin from homepage due to an unexpected error. Please try again.</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.ASSIGN.SUCCESS">
+                <loC>Dashboard successfully assigned</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.ASSIGN.FAIL">
+                <loC>Failed to assign dashboard due to an unexpected error. Please try again.</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.COPY.SUCCESS">
+                <loC>Dashboard successfully copied</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.COPY.FAIL">
+                <loC>Failed to copy dashboard due to an unexpected error. Please try again.</loC>
+            </lo>
+            <lo maxL="100" tK="app.widget.IMPORT.SUCCESS">
+                <loC>Widget successfully uploaded</loC>
+            </lo>
+            <lo maxL="100" tK="app.widget.IMPORT.FAIL">
+                <loC>Failed to upload widget due to an unexpected error. Please try again.</loC>
+            </lo>
+            <lo maxL="100" tK="app.widget.IMPORT.CONFIRM">
+                <loC>Widget already exists. Replace it?</loC>
+            </lo>
+            <lo maxL="100" tK="app.report.IMPORT.SUCCESS">
+                <loC>Report successfully uploaded</loC>
+            </lo>
+            <lo maxL="100" tK="app.report.IMPORT.FAIL">
+                <loC>Failed to upload report due to an unexpected error. Please try again.</loC>
+            </lo>
+            <lo maxL="100" tK="app.report.IMPORT.CONFIRM">
+                <loC>Report exists already. If the report is pinned to the homepage, it will get unpinned after you replace it. Replace it?</loC>
+            </lo>
+            <lo maxL="100" tK="app.report.DELETE.SUCCESS">
+                <loC>Report successfully deleted</loC>
+            </lo>
+            <lo maxL="100" tK="app.report.DELETE.FAIL">
+                <loC>Failed to delete report due to an unexpected error. Please try again.</loC>
+            </lo>
+            <lo maxL="100" tK="app.report.DELETE.CONFIRM">
+                <loC>Do you want to delete the report?</loC>
+            </lo>
+            <lo maxL="100" tK="app.report.DELETE.CONFIRMPIN">
+                <loC>Report [{0}] is pinned to the homepage. If you delete it, the one pinned to the homepage will also be automatically deleted. Delete the report?</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.DELETE.SUCCESS">
+                <loC>Dashboard successfully deleted</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.DELETE.FAIL">
+                <loC>Failed to delete dashboard due to an unexpected error. Please try again.</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.DELETE.CONFIRM">
+                <loC>Do you want to delete the dashboard?</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.DELETE.CONFIRMPIN">
+                <loC>Dashboard [{0}] is pinned to the homepage. If deleted, the one pinned to the homepage will also be automatically deleted. Delete the dashboard?</loC>
+            </lo>
+            <lo maxL="100" tK="app.widget.DELETE.SUCCESS">
+                <loC>Widget successfully deleted</loC>
+            </lo>
+            <lo maxL="100" tK="app.widget.DELETE.FAIL">
+                <loC>Failed to delete widget due to an unexpected error. Please try again.</loC>
+            </lo>
+            <lo maxL="100" tK="app.widget.DELETE.CONFIRM">
+                <loC>Do you want to delete the widget?</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.DELETE.NODELETE">
+                <loC>Please select a dashboard for deletion.</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.DELETE.NODELETESYS">
+                <loC>You cannot delete default dashboards as they are pre-defined by SAP Anywhere.</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.FIELD.MANDATORY">
+                <loC>This field is mandatory.</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.PARAM.SETVALUE">
+                <loC>Please select a value for this filter.</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.INPUT.NAME">
+                <loC>Please enter a dashboard name.</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.PARAM.CONFIRM.PIN">
+                <loC>You changed some content related to filters. This will cause the dashboard pinned to the homepage to be automatically deleted. Continue?</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.HAS.NOPARAMETER">
+                <loC>You changed some content related to the filters. This will cause the dashboard pinned to the homepage to be automatically deleted. Continue?</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.PARAM.DELETE.C">
+                <loC>Do you want to delete this filter?</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.PARAM.LINKED.BY">
+                <loC>This widget is already linked to dashboard filter [{0}].</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.PARAM.DUP.NAME">
+                <loC>Filter name already exists.</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.PARAM.NOLINK">
+                <loC>Dashboard filter [{0}] is not linked to a widget. Save dashboard filter?</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.WIDGET.NOLINK">
+                <loC>Widget [{0}] is not linked to a dashboard filter.</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.PARAM.NODESC">
+                <loC>No Description.</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.PARAM.T.BO">
+                <loC>Business Object</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.PARAM.T.DATE">
+                <loC>Date</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.PARAM.T.STR">
+                <loC>Text</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.PARAM.T.NUM">
+                <loC>Numeric</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.PARAM.S.CUSTOMER">
+                <loC>Customer</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.PARAM.S.WAREHOUSE">
+                <loC>Warehouse</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.PARAM.S.CAMPAIGN">
+                <loC>Campaign</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.PARAM.S.TEAM">
+                <loC>Team</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.PARAM.S.USER">
+                <loC>User</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.PARAM.S.SCP">
+                <loC>Service Case Priority</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.VIEW.STEP2">
+                <loC>Add New Filters</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.VIEW.STEP1">
+                <loC>Select Widgets</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.VIEW.STEP3">
+                <loC>Link Widgets to Filters</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.INSTANCE.PIN.DESC">
+                <loC>You are pinning the current dashboard together with its filters to the homepage. Please rename it so that it differs from the original dashboard.</loC>
+            </lo>
+            <lo maxL="100" tK="app.report.INSTANCE.PIN.DESC">
+                <loC>You are pinning the report under current filter conditions to the homepage. Please rename it so that it differs from the original report.</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.PARAM.S.CHANNEL">
+                <loC>Sales Channel</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.PARAM.T.DATERANGE">
+                <loC>Date Range</loC>
+            </lo>
+            <lo maxL="100" tK="app.report.EXPORT.DESC1">
+                <loC>There are {0} lines of data waiting to be exported.</loC>
+            </lo>
+            <lo maxL="100" tK="app.report.EXPORT.DESC2">
+                <loC>You will export the table of this report into Microsoft Excel. It will take a while to complete the export if there is a large amount of data.</loC>
+            </lo>
+            <lo maxL="100" tK="app.report.EXPORT.DESC3">
+                <loC>Exporting data...</loC>
+            </lo>
+            <lo maxL="100" tK="app.report.EXPORT.DESC4">
+                <loC>Download the file to your local device</loC>
+            </lo>
+            <lo maxL="100" tK="app.report.EXPORT.TITLE">
+                <loC>Export to Microsoft Excel</loC>
+            </lo>
+            <lo maxL="100" tK="app.report.PARAM.DATEWARNING">
+                <loC>Days cannot be less than 0.</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.PARAM.S.PRODUCT">
+                <loC>Product</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.PARAM.T.MORE">
+                <loC>More…</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.PARAM.INFO">
+                <loC>If you check this box, you will filter out all the corresponding widgets that allow multiple choices.</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.SOCIAL.NODATA">
+                <loC>Currently no data.</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.SOCIAL.WAIT">
+                <loC>However, if you have just bound social media accounts to the customer, the system may currently be retrieving data. You can refresh the page to check the result later.</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.WIDGET.ERROR">
+                <loC>Custom widget incorrectly applied to dashboard</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.PARAM.S.CUSTGROUP">
+                <loC>Customer Group</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.PARAM.S.INDUSTRY">
+                <loC>Industry</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.PARAM.S.PMTTERM">
+                <loC>Payment Term</loC>
+            </lo>
+            <lo maxL="100" tK="app.report.RENAME.SUCCESS">
+                <loC>Renamed successfully</loC>
+            </lo>
+            <lo maxL="100" tK="app.report.SAVE.CONFIRM">
+                <loC>If the report is pinned to the homepage, it will become unpinned after you save it. Save report?</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.CANCELEDIT.CONFIRM">
+                <loC>Modifications to the dashboard will not be saved if you close it. Continue?</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.LINK.UPDATE">
+                <loC>Link the {0} page to this dashboard? If so, the previous link to {1} will be replaced.</loC>
+            </lo>
+            <lo maxL="200" tK="app.dashboard.PARAM.SETTINGDESC">
+                <loC>Set the selection options for the filter first. Then choose one or more values for the filter based on the selection options you chose.</loC>
+            </lo>
+            <lo maxL="180" tK="app.dashboard.FILTER.UPDATE">
+                <loC>The added widgets contain filters that only support single values. Filters below have been changed to support single values:</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.SOCIAL.ALLCOMMENTS">
+                <loC>All Comments</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.SAVEIT.CONFIRM">
+                <loC>No default value set for the filters "[{0}]". Continue?</loC>
+            </lo>
+        </loGrp>
+        <loGrp grpClass="textType" grpName="YMSG">
+            <lo maxL="254" tK="app.dashboard.OUTOFSPACE">
+                <loC>Widgets' total size exceeds the maximum size of the dashboard and widget {0} will be automatically deselected. You can either discard some widgets or adjust their sizes before adding more.</loC>
+            </lo>
+        </loGrp>
+    </body>
+</slim>

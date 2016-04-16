@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><slim xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" slimEd="1.0" xsi:schemaLocation="www.sap.com/slim slim.xsd">
+    <header>
+        <locale>
+            <develLc>EN</develLc>
+            <contentLc>zh_CN</contentLc>
+        </locale>
+        <objType>line</objType>
+        <domain>AW</domain>
+        <contentName>ANALYTICS_ANW</contentName>
+        <description>A full featured SLIM-file</description>
+        <defaults>
+            <maxL>255</maxL>
+        </defaults>
+        <workflow>
+            <contacts>
+                <developer/>
+            </contacts>
+        </workflow>
+    </header>
+    <body>
+        <loGrp grpClass="textType" grpName="XMSG">
+            <lo tK="P502819990">
+                <loC>读取模型{0}的元数据失败</loC>
+            </lo>
+            <lo tK="P1306506793">
+                <loC>模型{2}的层次结构{1}默认成员{0}非法</loC>
+            </lo>
+            <lo tK="P465264639">
+                <loC>非法分析标识符{0}</loC>
+            </lo>
+            <lo tK="P2045161541">
+                <loC>非法度量标识符{0}</loC>
+            </lo>
+            <lo tK="P442368864">
+                <loC>非法分析类型{0}</loC>
+            </lo>
+            <lo tK="P365960358">
+                <loC>过滤条件{0}缺少成员</loC>
+            </lo>
+            <lo tK="P1054749004">
+                <loC>过滤条件{0}的公式{1}不包含所有成员。</loC>
+            </lo>
+            <lo tK="P1685155178">
+                <loC>过滤条件{0}包含非法公式{1}。</loC>
+            </lo>
+            <lo tK="P2054791408">
+                <loC>过滤条件{0}公式{1}缺少参数</loC>
+            </lo>
+            <lo tK="P894136381">
+                <loC>过滤条件{0}公式{1}缺少运算符</loC>
+            </lo>
+            <lo tK="P1429589971">
+                <loC>过滤条件{0}公式{1}包含非法运算符{2}</loC>
+            </lo>
+            <lo tK="P2069606756">
+                <loC>过滤条件{0}运算符{1}缺少值</loC>
+            </lo>
+            <lo tK="P1189798120">
+                <loC>分析标识符{0}在轴和切片上重叠</loC>
+            </lo>
+            <lo tK="P2113624934">
+                <loC>切片只允许单成员：{0}</loC>
+            </lo>
+            <lo tK="P525180150">
+                <loC>MDX查询引擎不支持变量。</loC>
+            </lo>
+            <lo tK="P881518310">
+                <loC>超出最大允许结果集数量：{0}</loC>
+            </lo>
+            <lo tK="P201944585">
+                <loC>非法受限度量标识符：{0}（不符合格式{1}）</loC>
+            </lo>
+            <lo tK="P836991820">
+                <loC>非法计算度量标识符：{0}（不符合格式{1}）</loC>
+            </lo>
+            <lo tK="P1225333287">
+                <loC>{0}包含空计算表达式。</loC>
+            </lo>
+            <lo tK="P820314649">
+                <loC>{0}检测到循环引用计算表达式</loC>
+            </lo>
+            <lo tK="P1602051889">
+                <loC>{0}的计算表达式包含非法度量{1}</loC>
+            </lo>
+            <lo tK="P614050121">
+                <loC>{0}的计算表达式包含非法类型{1}</loC>
+            </lo>
+            <lo tK="P2009967053">
+                <loC>{0}的计算表达式包含非法常量{1}</loC>
+            </lo>
+            <lo tK="P269453080">
+                <loC>非法计算成员标识符：{0}（不符合格式{1}）</loC>
+            </lo>
+            <lo tK="P726816394">
+                <loC>小计没有分组分析标识符。</loC>
+            </lo>
+            <lo tK="P1701067910">
+                <loC>MDX查询引擎不支持分页。</loC>
+            </lo>
+            <lo tK="P2048212740">
+                <loC>MDX查询引擎不支持多个受限度量。</loC>
+            </lo>
+            <lo tK="P329721800">
+                <loC>MDX查询引擎不支持含基础过滤条件的受限度量。</loC>
+            </lo>
+            <lo tK="P483596727">
+                <loC>MDX查询引擎不支持计算度量。</loC>
+            </lo>
+            <lo tK="P1955603201">
+                <loC>MDX查询引擎不支持计算成员。</loC>
+            </lo>
+            <lo tK="P57206027">
+                <loC>MDX查询引擎不支持小计</loC>
+            </lo>
+            <lo tK="P1433861100">
+                <loC>MDX查询引擎不支持基础过滤条件。</loC>
+            </lo>
+            <lo tK="P1434766208">
+                <loC>MDX查询引擎不支持MAX/MIN聚合</loC>
+            </lo>
+        </loGrp>
+    </body>
+</slim>

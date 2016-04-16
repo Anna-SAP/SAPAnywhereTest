@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><slim xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" slimEd="1.0" xsi:schemaLocation="www.sap.com/slim slim.xsd">
+    <header>
+        <locale>
+            <develLc>EN</develLc>
+            <contentLc>zh_CN</contentLc>
+        </locale>
+        <objType>line</objType>
+        <domain>AW</domain>
+        <contentName>OCC_APP_REPORT_INVENTORY_TURNOVER</contentName>
+        <description>A full featured SLIM-file</description>
+        <defaults>
+            <maxL>255</maxL>
+        </defaults>
+        <workflow>
+            <contacts>
+                <developer/>
+            </contacts>
+        </workflow>
+    </header>
+    <body>
+        <loGrp grpClass="textType" grpName="XFLD">
+            <lo maxL="60" tK="label.Inventory.InventoryTurnover">
+                <loC>库存周转率</loC>
+            </lo>
+            <lo maxL="200" tK="label.inventoryTurnover.column.averageInventoryAmount">
+                <loC>平均库存成本</loC>
+            </lo>
+            <lo maxL="200" tK="label.inventoryTurnover.column.brandName">
+                <loC>品牌</loC>
+            </lo>
+            <lo maxL="200" tK="label.inventoryTurnover.column.categoryName">
+                <loC>产品类别</loC>
+            </lo>
+            <lo maxL="200" tK="label.inventoryTurnover.column.cogs">
+                <loC>销售成本</loC>
+            </lo>
+            <lo maxL="200" tK="label.inventoryTurnover.column.grossMargin">
+                <loC>总利润%</loC>
+            </lo>
+            <lo maxL="200" tK="label.inventoryTurnover.column.inventoryTurnover">
+                <loC>库存周转率</loC>
+            </lo>
+            <lo maxL="200" tK="label.inventoryTurnover.column.investTurnover">
+                <loC>投资收益</loC>
+            </lo>
+            <lo maxL="200" tK="label.inventoryTurnover.column.salesRevenue">
+                <loC>销售收入</loC>
+            </lo>
+            <lo maxL="200" tK="label.inventoryTurnover.column.skuName">
+                <loC>产品</loC>
+            </lo>
+            <lo maxL="200" tK="label.inventoryTurnover.column.whsName">
+                <loC>仓库</loC>
+            </lo>
+            <lo maxL="200" tK="label.inventoryTurnover.daterange">
+                <loC>日期范围</loC>
+            </lo>
+            <lo maxL="200" tK="label.inventoryTurnover.filter.brand">
+                <loC>品牌</loC>
+            </lo>
+            <lo maxL="200" tK="label.inventoryTurnover.filter.product">
+                <loC>产品</loC>
+            </lo>
+            <lo maxL="200" tK="label.inventoryTurnover.filter.productCategory">
+                <loC>产品类别</loC>
+            </lo>
+            <lo maxL="200" tK="label.inventoryTurnover.filter.warehouse">
+                <loC>仓库</loC>
+            </lo>
+            <lo maxL="200" tK="label.inventoryTurnover.value.null">
+                <loC>未定义值</loC>
+            </lo>
+        </loGrp>
+    </body>
+</slim>

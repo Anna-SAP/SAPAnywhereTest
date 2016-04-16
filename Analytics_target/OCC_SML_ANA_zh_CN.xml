@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><slim xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" slimEd="1.0" xsi:schemaLocation="www.sap.com/slim slim.xsd">
+    <header>
+        <locale>
+            <develLc>EN</develLc>
+            <contentLc>zh_CN</contentLc>
+        </locale>
+        <objType>line</objType>
+        <domain>AW</domain>
+        <contentName>OCC_SML_ANA</contentName>
+        <description>A full featured SLIM-file</description>
+        <defaults>
+            <maxL>255</maxL>
+        </defaults>
+        <workflow>
+            <contacts>
+                <developer/>
+            </contacts>
+        </workflow>
+    </header>
+    <body>
+        <loGrp grpClass="textType" grpName="XMSG">
+            <lo tK="S001MT0001">
+                <loC>语义层定义文件 {0} 解析错误</loC>
+            </lo>
+            <lo tK="S001MT0002">
+                <loC>语义层定义文件 {0} 验证失败</loC>
+            </lo>
+            <lo tK="S001MT0003">
+                <loC>语义层定义文件 {0} 读取失败</loC>
+            </lo>
+            <lo tK="S001MT0004">
+                <loC>没有找到语义层定义文件 {0}</loC>
+            </lo>
+            <lo tK="S001MT0005">
+                <loC>语义层定义文件 {0} 连接元素缺失</loC>
+            </lo>
+            <lo tK="S001MT0006">
+                <loC>语义层定义文件 {0} 只能定义一个连接。</loC>
+            </lo>
+            <lo tK="S001MT0007">
+                <loC>语义层样式已更改，请更新报表。</loC>
+            </lo>
+        </loGrp>
+        <loGrp grpClass="textType" grpName="XFLD">
+            <lo maxL="20" tK="label.expand.Month">
+                <loC>月</loC>
+            </lo>
+            <lo maxL="20" tK="label.expand.Year">
+                <loC>年</loC>
+            </lo>
+            <lo maxL="20" tK="label.expand.YearMonth">
+                <loC>日历月</loC>
+            </lo>
+            <lo maxL="20" tK="label.expand.YearMonthDay">
+                <loC>日历天</loC>
+            </lo>
+            <lo maxL="20" tK="label.expand.day">
+                <loC>天</loC>
+            </lo>
+            <lo maxL="20" tK="label.sharedChannel.code">
+                <loC>渠道编号</loC>
+            </lo>
+            <lo maxL="20" tK="label.sharedChannel.name">
+                <loC>渠道名称</loC>
+            </lo>
+            <lo maxL="20" tK="label.sharedCurrency.code">
+                <loC>货币代码</loC>
+            </lo>
+            <lo maxL="20" tK="label.sharedCurrency.symbol">
+                <loC>货币符号</loC>
+            </lo>
+            <lo maxL="20" tK="label.sharedCustomer.group">
+                <loC>客户组</loC>
+            </lo>
+            <lo maxL="20" tK="label.sharedCustomerGroup.description">
+                <loC>客户组名称</loC>
+            </lo>
+            <lo maxL="20" tK="label.sharedPaymentTerm.name">
+                <loC>支付条款名称</loC>
+            </lo>
+            <lo maxL="20" tK="label.sharedPaymentType.code">
+                <loC>支付类型编号</loC>
+            </lo>
+            <lo maxL="20" tK="label.sharedPaymentType.name">
+                <loC>支付类型名称</loC>
+            </lo>
+            <lo maxL="20" tK="label.sharedProcess.code">
+                <loC>交付方式编号</loC>
+            </lo>
+            <lo maxL="20" tK="label.sharedProcess.name">
+                <loC>交付方式名称</loC>
+            </lo>
+            <lo maxL="20" tK="label.sharedShippingCarrier.name">
+                <loC>物流公司</loC>
+            </lo>
+            <lo maxL="20" tK="label.sohead.customer">
+                <loC>客户</loC>
+            </lo>
+            <lo maxL="20" tK="label.sohead.desc">
+                <loC>从下方选择字段，定制你的报表。</loC>
+            </lo>
+            <lo maxL="20" tK="label.sohead.title">
+                <loC>销售订单</loC>
+            </lo>
+            <lo tK="label.paycube.owner">
+                <loC>负责人</loC>
+            </lo>
+            <lo tK="label.Payment.boName">
+                <loC>单据类型</loC>
+            </lo>
+            <lo tK="label.Payment.ownerCode">
+                <loC>负责人编号</loC>
+            </lo>
+            <lo tK="label.Payment.updateTime">
+                <loC>最后更新时间</loC>
+            </lo>
+            <lo tK="label.SharedContactPerson.id">
+                <loC>联系人编号</loC>
+            </lo>
+            <lo tK="label.Payment.PaymentLine.appliedAmountLC">
+                <loC>支付金额（本币）</loC>
+            </lo>
+            <lo tK="label.Payment.PaymentLine.totalAmountLC">
+                <loC>总金额（本币）</loC>
+            </lo>
+            <lo tK="label.Payment.PaymentMethodLine.appliedPoints">
+                <loC>使用的积分</loC>
+            </lo>
+            <lo tK="label.Payment.cancelDate">
+                <loC>取消时间</loC>
+            </lo>
+            <lo tK="label.paycube.creator">
+                <loC>创建人</loC>
+            </lo>
+            <lo tK="label.paylinecube.payment">
+                <loC>收付款/预收账款单据抬头</loC>
+            </lo>
+            <lo tK="label.Payment.creatorCode">
+                <loC>创建人编号</loC>
+            </lo>
+            <lo tK="label.Payment.updatorCode">
+                <loC>更新人编号</loC>
+            </lo>
+            <lo tK="label.paycube.updator">
+                <loC>更新人</loC>
+            </lo>
+            <lo maxL="20" tK="label.Manufacturer.id">
+                <loC>制造商序号</loC>
+            </lo>
+            <lo maxL="20" tK="label.Category.id">
+                <loC>类别序号</loC>
+            </lo>
+            <lo maxL="20" tK="label.inventorystatus.desc">
+                <loC>你可以从以下字段选择，以便自定义报表：</loC>
+            </lo>
+            <lo maxL="20" tK="label.Manufacturer.name">
+                <loC>制造商名称</loC>
+            </lo>
+            <lo maxL="20" tK="label.SKU.id">
+                <loC>单品序号</loC>
+            </lo>
+            <lo maxL="20" tK="label.Vendor.id">
+                <loC>供应商序号</loC>
+            </lo>
+            <lo maxL="20" tK="label.Brand.id">
+                <loC>品牌序号</loC>
+            </lo>
+            <lo maxL="20" tK="label.sharedVariantValue.variant">
+                <loC>产品属性</loC>
+            </lo>
+            <lo maxL="20" tK="label.sharedVariantValue.value">
+                <loC>属性值</loC>
+            </lo>
+            <lo maxL="20" tK="label.sharedSalesOrder.updateTime">
+                <loC>更新时间</loC>
+            </lo>
+            <lo maxL="20" tK="label.soline.grossUnitPriceCalc">
+                <loC>含税单价</loC>
+            </lo>
+            <lo maxL="20" tK="label.report.Product.id">
+                <loC>产品序号</loC>
+            </lo>
+            <lo maxL="20" tK="label.Brand.name">
+                <loC>品牌名称</loC>
+            </lo>
+            <lo maxL="20" tK="label.sharedSalesOrder.creationTime">
+                <loC>创建时间</loC>
+            </lo>
+            <lo maxL="20" tK="label.sharedVariantValue.code">
+                <loC>编号</loC>
+            </lo>
+            <lo maxL="20" tK="label.pohead.desc">
+                <loC>可以选择以下字段，以自定义报表。</loC>
+            </lo>
+            <lo maxL="20" tK="label.Product.Status">
+                <loC>产品状态</loC>
+            </lo>
+            <lo maxL="20" tK="label.Brand.Name">
+                <loC>品牌名称</loC>
+            </lo>
+            <lo maxL="20" tK="label.poline.title">
+                <loC>采购订单行</loC>
+            </lo>
+            <lo maxL="20" tK="label.sharedPurchaseOrder.creationTime">
+                <loC>创建时间</loC>
+            </lo>
+            <lo maxL="20" tK="label.Manufacturer.Name">
+                <loC>制造商名称</loC>
+            </lo>
+            <lo maxL="20" tK="label.Warehouse.Status">
+                <loC>仓库状态</loC>
+            </lo>
+            <lo maxL="20" tK="label.sharedPurchaseOrder.updateTime">
+                <loC>更新时间</loC>
+            </lo>
+            <lo maxL="20" tK="label.batchStatus.title">
+                <loC>批次状态</loC>
+            </lo>
+            <lo maxL="20" tK="label.pohead.title">
+                <loC>采购订单</loC>
+            </lo>
+        </loGrp>
+    </body>
+</slim>

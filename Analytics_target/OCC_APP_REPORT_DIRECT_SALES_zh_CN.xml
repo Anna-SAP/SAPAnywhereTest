@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><slim xmlns="www.sap.com/slim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" slimEd="1.0" xsi:schemaLocation="www.sap.com/slim slim.xsd">
+    <header>
+        <locale>
+            <develLc>EN</develLc>
+            <contentLc>zh_CN</contentLc>
+        </locale>
+        <objType>line</objType>
+        <collection>ANYWHERE_OCC</collection>
+        <domain>AW</domain>
+        <contentName>OCC_APP_REPORT_DIRECT_SALES</contentName>
+        <description>A full featured SLIM-file</description>
+        <defaults>
+            <maxL>255</maxL>
+        </defaults>
+        <workflow>
+            <contacts>
+                <developer>I058953</developer>
+            </contacts>
+        </workflow>
+    </header>
+    <body>
+        <loGrp grpClass="textType" grpName="XMSG">
+            <lo maxL="200" tK="app.report.directsales.message">
+                <loC>(just a sample) xx error message</loC>
+            </lo>
+        </loGrp>
+        <loGrp grpClass="textType" grpName="XFLD">
+            <lo maxL="200" tK="label.winlostReason.title">
+                <loC>赢单丢单原因</loC>
+            </lo>
+            <lo maxL="200" tK="label.winlostReason.lost">
+                <loC>丢单数量</loC>
+            </lo>
+            <lo maxL="200" tK="label.winlostReason.win">
+                <loC>赢单数量</loC>
+            </lo>
+            <lo maxL="200" tK="label.winlostReason.winlostnumber">
+                <loC>数量</loC>
+            </lo>
+            <lo maxL="200" tK="label.winlostReason.winlostamount">
+                <loC>金额</loC>
+            </lo>
+            <lo maxL="200" tK="label.winlostReason.customer">
+                <loC>客户</loC>
+            </lo>
+            <lo maxL="200" tK="label.winlostReason.stage">
+                <loC>阶段</loC>
+            </lo>
+            <lo maxL="200" tK="label.winlostReason.lostpotentialamount">
+                <loC>丢单总金额</loC>
+            </lo>
+            <lo maxL="200" tK="label.winlostReason.winpotentialamount">
+                <loC>赢单总金额</loC>
+            </lo>
+            <lo maxL="200" tK="label.winlostReason.reason">
+                <loC>理由</loC>
+            </lo>
+            <lo maxL="200" tK="label.leadSourceSuccess.title">
+                <loC>成功的销售线索</loC>
+            </lo>
+            <lo maxL="200" tK="label.leadSourceSuccess.description">
+                <loC>有多少销售线索能成功生成销售机会和报价？这个报表会按照来源进行分类，为你自动归纳这些有价值的线索。</loC>
+            </lo>
+            <lo maxL="200" tK="label.leadSourceSuccess.source">
+                <loC>来源</loC>
+            </lo>
+            <lo maxL="200" tK="label.leadSourceSuccess.count">
+                <loC>数量</loC>
+            </lo>
+            <lo maxL="200" tK="label.leadSourceSuccess.countColumn">
+                <loC>销售线索数量</loC>
+            </lo>
+            <lo maxL="200" tK="label.directSales.startDate">
+                <loC>起始日期</loC>
+            </lo>
+            <lo maxL="200" tK="label.directSales.endDate">
+                <loC>结束日期</loC>
+            </lo>
+            <lo maxL="200" tK="label.customer360.name">
+                <loC>客户360</loC>
+            </lo>
+            <lo maxL="200" tK="label.customer360.param.name">
+                <loC>客户</loC>
+            </lo>
+            <lo maxL="200" tK="label.customer360.param.hint">
+                <loC>客户名称</loC>
+            </lo>
+            <lo maxL="200" tK="label.customerInsight.name">
+                <loC>业务洞察</loC>
+            </lo>
+            <lo maxL="200" tK="label.customerInsight.param.hint">
+                <loC>客户名称</loC>
+            </lo>
+            <lo maxL="200" tK="label.customerInsight.param.name">
+                <loC>客户</loC>
+            </lo>
+            <lo maxL="200" tK="label.pdtRecommend.col.cVol">
+                <loC>交叉销售数量</loC>
+            </lo>
+            <lo maxL="200" tK="label.pdtRecommend.title">
+                <loC>商品推荐</loC>
+            </lo>
+            <lo maxL="200" tK="label.bundleProduct.col.product">
+                <loC>相关产品</loC>
+            </lo>
+            <lo maxL="200" tK="label.pdtRecommend.col.rProduct">
+                <loC>推荐产品</loC>
+            </lo>
+            <lo maxL="200" tK="label.pdtRecommend.col.pProduct">
+                <loC>已购产品</loC>
+            </lo>
+            <lo maxL="200" tK="label.bundleProduct.title">
+                <loC>混搭</loC>
+            </lo>
+            <lo maxL="200" tK="label.bundleProduct.col.percent">
+                <loC>销售数量百分比</loC>
+            </lo>
+            <lo maxL="200" tK="label.pdtRecommend.col.cPercent">
+                <loC>交叉销售数量百分比</loC>
+            </lo>
+            <lo maxL="200" tK="label.pdtRecommend.col.pVol">
+                <loC>已购产品数量</loC>
+            </lo>
+            <lo maxL="200" tK="label.bundleProduct.col.vol">
+                <loC>销售数量</loC>
+            </lo>
+        </loGrp>
+    </body>
+</slim>

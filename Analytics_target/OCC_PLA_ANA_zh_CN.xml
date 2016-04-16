@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><slim xmlns="www.sap.com/slim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" slimEd="1.0" xsi:schemaLocation="www.sap.com/slim slim.xsd">
+    <header>
+        <locale>
+            <develLc>EN</develLc>
+            <contentLc>zh_CN</contentLc>
+        </locale>
+        <objType>line</objType>
+        <collection>OCC_PLA_ANA</collection>
+        <domain>AW</domain>
+        <contentName>OCC_PLA_ANA</contentName>
+        <description>A full featured SLIM-file for OCC Analytics</description>
+        <defaults>
+            <maxL>255</maxL>
+        </defaults>
+        <workflow>
+            <contacts>
+                <developer>i061134</developer>
+            </contacts>
+        </workflow>
+        <applSpec tK="DATE">
+            <ASD>2014-12-06</ASD>
+        </applSpec>
+        <applSpec tK="VERSION">
+            <ASD>1</ASD>
+        </applSpec>
+    </header>
+    <body>
+        <loGrp grpClass="textType" grpName="XMSG">
+            <lo tK="P150AD0001">
+                <loC>不支持数据源类型"{0}"。</loC>
+            </lo>
+            <lo tK="P150AD0002">
+                <loC>无法更新SAP预定义的数据集。</loC>
+            </lo>
+            <lo tK="P150AD0003">
+                <loC>数据集定义文件读取错误。</loC>
+            </lo>
+            <lo tK="P150AD0005">
+                <loC>数据集定义内部验证错误。</loC>
+            </lo>
+            <lo tK="P150AD0006">
+                <loC>数据集定义解析错误。</loC>
+            </lo>
+            <lo tK="P150AD0007">
+                <loC>数据集定义没有保存成功。</loC>
+            </lo>
+            <lo tK="P150AD0008">
+                <loC>数据集"{0}"不存在，请先定义。</loC>
+            </lo>
+            <lo tK="P150AD0009">
+                <loC>报表定义验证错误。</loC>
+            </lo>
+            <lo tK="P150AD0010">
+                <loC>报表定义读取IO错误。</loC>
+            </lo>
+            <lo tK="P150AD0011">
+                <loC>报表定义解析错误。</loC>
+            </lo>
+            <lo tK="P150AD0012">
+                <loC>报表定义元素未知。</loC>
+            </lo>
+            <lo tK="P150AD0013">
+                <loC>小部件"{0}"定义未知。</loC>
+            </lo>
+            <lo tK="P150AD0014">
+                <loC>小部件定义解析错误。</loC>
+            </lo>
+            <lo tK="P150AD0015">
+                <loC>该报表不存在，可能已被其他用户删除。</loC>
+            </lo>
+            <lo tK="P150AD0016">
+                <loC>请为小部件指定报表参数"{0}"的默认值。</loC>
+            </lo>
+            <lo tK="P150AD0017">
+                <loC>数据集"{0}"执行错误。</loC>
+            </lo>
+            <lo tK="P150AD0018">
+                <loC>本地查询"{0}"执行错误。</loC>
+            </lo>
+            <lo tK="P150AD0019">
+                <loC>本地查询结果读取错误。</loC>
+            </lo>
+            <lo tK="P150AD0020">
+                <loC>请为数据集指定参数"{0}"的值。</loC>
+            </lo>
+            <lo tK="P150AD0021">
+                <loC>表达式函数"{0}"已经注册。</loC>
+            </lo>
+            <lo tK="P150AD0022">
+                <loC>表达式"{0}"解析错误。</loC>
+            </lo>
+            <lo tK="P150AD0023">
+                <loC>表达式"{0}"执行评估错误。</loC>
+            </lo>
+            <lo tK="P150AD0026">
+                <loC>不支持转换未知的数据类型。</loC>
+            </lo>
+            <lo tK="P150AD0027">
+                <loC>不支持转换class类型"{0}"到数据类型"{1}"。</loC>
+            </lo>
+            <lo tK="P150AD0028">
+                <loC>不支持解析字符串到数据类型"{0}"。</loC>
+            </lo>
+            <lo tK="P150AD0030">
+                <loC>报表参数的choices只能与数据集的一列绑定。</loC>
+            </lo>
+            <lo tK="P150AD0031">
+                <loC>无法输入参数值{0}，报表参数"{1}"的值只能从指定的数据集列中选择。</loC>
+            </lo>
+            <lo tK="P150AD0032">
+                <loC>绑定表达式"{0}"无效。</loC>
+            </lo>
+            <lo tK="P150AD0033">
+                <loC>绑定无效，请先定义数据集"{0}"。</loC>
+            </lo>
+            <lo tK="P150AD0034">
+                <loC>无法将值{0}转换成数据类型"{1}"。</loC>
+            </lo>
+            <lo tK="P150AD0035">
+                <loC>业务对象绑定错误:"{0}"</loC>
+            </lo>
+            <lo tK="P150AD0036">
+                <loC>参数"{0}"默认值设置错误，如果想让这个默认值返回多个值，请将多选 (multi-choice) 设置为真 (true)。</loC>
+            </lo>
+            <lo tK="P150AE0001">
+                <loC>关键业绩指标小部件"{0}"缺少实际值。</loC>
+            </lo>
+            <lo tK="P150AE0002">
+                <loC>关键业绩指标小部件"{0}"缺少趋势值。</loC>
+            </lo>
+            <lo tK="P150AE0003">
+                <loC>关键业绩指标小部件"{0}"缺少目标值。</loC>
+            </lo>
+            <lo tK="P150AE0004">
+                <loC>记分牌小部件"{0}"不能为空，请先至少输入一个KPI或计数。</loC>
+            </lo>
+            <lo tK="P150AE0005">
+                <loC>计数小部件"{0}"不能为空，请先输入一个值。</loC>
+            </lo>
+            <lo tK="P150AE0006">
+                <loC>列表小部件"{0}"不能为空，请先输入一个值。</loC>
+            </lo>
+            <lo tK="P150AE0007">
+                <loC>基本数据小部件"{0}"缺少名字元素。</loC>
+            </lo>
+            <lo tK="P150AE0008">
+                <loC>请先为图形小部件"{0}"至少定义一个测量列。</loC>
+            </lo>
+            <lo tK="P150AE0009">
+                <loC>请先为图形小部件"{0}"至少定义一个维度。</loC>
+            </lo>
+            <lo tK="P150AE0010">
+                <loC>请先为表格小部件"{0}"绑定数据集。</loC>
+            </lo>
+            <lo tK="P150AE0020">
+                <loC>报表定义的数据内容出错，请为图形小部件"{0}"绑定一个数据集。</loC>
+            </lo>
+            <lo tK="P150AE0021">
+                <loC>报表定义的数据内容出错,请为计数小部件"{0}"的跳转数据绑定一个数据集。</loC>
+            </lo>
+            <lo tK="P150AE0022">
+                <loC>报表定义的数据内容出错，请为基本数据小部件"{0}"绑定一个数据列。</loC>
+            </lo>
+            <lo tK="P150AE0023">
+                <loC>报表定义的数据内容出错，请为表格小部件"{0}"绑定一个数据集。</loC>
+            </lo>
+            <lo tK="P150AE0025">
+                <loC>报表定义的数据内容出错，请为列表小部件"{0}"绑定一个数据集。</loC>
+            </lo>
+            <lo tK="P150AE0030">
+                <loC>获取小部件"{0}"的描述信息错误: {1}。</loC>
+            </lo>
+            <lo tK="P150AE0031">
+                <loC>报表定义的数据内容出错：你仅能定义一张表格。</loC>
+            </lo>
+            <lo tK="P150AE0032">
+                <loC>报表定义的数据内容出错：你仅能定义一张图表。</loC>
+            </lo>
+            <lo tK="P150AE0033">
+                <loC>图表中维度信息定义出错。</loC>
+            </lo>
+            <lo tK="P150AE0034">
+                <loC>图表中测量值信息定义出错。</loC>
+            </lo>
+            <lo tK="P150BE0001">
+                <loC>未能删除仪表盘:"{0}"</loC>
+            </lo>
+            <lo tK="P150AD0037">
+                <loC>加载报表"{0}"的定义文件出错。</loC>
+            </lo>
+            <lo tK="P150AD0038">
+                <loC>没有找到报表"{0}"的定义文件。</loC>
+            </lo>
+            <lo tK="P150AD0039">
+                <loC>内部存储对象构造失败。</loC>
+            </lo>
+            <lo tK="P150AD0040">
+                <loC>报表"{0}"已经存在。</loC>
+            </lo>
+            <lo tK="P150AD0041">
+                <loC>命名空间"{0}"错误，命名空间不能以“com.sap.”开头。</loC>
+            </lo>
+            <lo tK="P150AD0042">
+                <loC>不支持该排序类型。</loC>
+            </lo>
+            <lo tK="P150PA0001">
+                <loC>无法添加预定义的仪表盘"{0}"</loC>
+            </lo>
+            <lo tK="P150PA0002">
+                <loC>无法删除预定义的仪表盘"{0}"</loC>
+            </lo>
+            <lo tK="P150PA0003">
+                <loC>无法更新预定义的仪表盘"{0}"</loC>
+            </lo>
+            <lo tK="P150PA0004">
+                <loC>找不到权限管理的配置。</loC>
+            </lo>
+            <lo tK="P150PA0011">
+                <loC>你没有权限进入仪表盘中心。</loC>
+            </lo>
+            <lo tK="P150PA0012">
+                <loC>你没有权限添加仪表盘"{0}"。</loC>
+            </lo>
+            <lo tK="P150PA0013">
+                <loC>你没有权限删除仪表盘 "{0}"。</loC>
+            </lo>
+            <lo tK="P150PA0014">
+                <loC>你没有权限更新仪表盘 "{0}"。</loC>
+            </lo>
+            <lo tK="P150PA0015">
+                <loC>你没有权限读取仪表盘 "{0}"。</loC>
+            </lo>
+            <lo tK="P150PA0021">
+                <loC>你没有权限进入报表中心。</loC>
+            </lo>
+            <lo tK="P150PA0022">
+                <loC>你没有权限添加报表 "{0}"。</loC>
+            </lo>
+            <lo tK="P150PA0023">
+                <loC>你没有权限删除报表 "{0}"。</loC>
+            </lo>
+            <lo tK="P150PA0024">
+                <loC>你没有权限更新报表 "{0}"。</loC>
+            </lo>
+            <lo tK="P150PA0025">
+                <loC>你没有权限读取报表 "{0}"。</loC>
+            </lo>
+            <lo tK="P150PA0026">
+                <loC>报表参数转换有误。</loC>
+            </lo>
+            <lo tK="P150PA0027">
+                <loC>报表参数转换器无效。</loC>
+            </lo>
+            <lo tK="P150AD0043">
+                <loC>文件上传失败，报表不支持这个类型{0}。</loC>
+            </lo>
+            <lo tK="P150AD0044">
+                <loC>仪表盘"{0}"正在使用这个小部件。如果删除了它，相关数据将不会显示在这些仪表盘中。你确定要继续吗？</loC>
+            </lo>
+            <lo tK="P150AD0048">
+                <loC>文件上传失败, 请为文件添加标题。</loC>
+            </lo>
+            <lo tK="P150AD0049">
+                <loC>文件上传失败, 分类必须是"财务、客户关系管理、销售、库存、服务、其他"。</loC>
+            </lo>
+            <lo tK="P150AD0060">
+                <loC>无法执行该报表，因为报表定义文件 (srdl.) 包含系统不支持的业务对象条件 "{0}"。</loC>
+            </lo>
+            <lo tK="P150AD0061">
+                <loC>无法执行该报表，因为报表定义文件中的业务对象条件不支持操作 "{0}" 。</loC>
+            </lo>
+            <lo tK="P150AD0063">
+                <loC>无法执行该报表，因为图片包装对象无法启动。</loC>
+            </lo>
+            <lo tK="P150AD0064">
+                <loC>无法读取数据集定义，因为可选参数 {0} 的定义错误。</loC>
+            </lo>
+            <lo tK="P150AD0065">
+                <loC>无法读取数据集定义因为 [] {0}中的可选参数不止一个。</loC>
+            </lo>
+            <lo tK="P150AD0066">
+                <loC>无法读取数据集定义，不是所有可选参数{0}都在[]中。</loC>
+            </lo>
+            <lo tK="P150AD0067">
+                <loC>无法执行报表，尽管可选参数已定义，但参数的选择内容未定义或不正确。</loC>
+            </lo>
+            <lo tK="P150AD0068">
+                <loC>无法执行报表，因为出于技术原因如今尚不支持直接执行数据集类型{0}。</loC>
+            </lo>
+            <lo tK="P150AD0069">
+                <loC>无法执行报表，找不到数据集 {0}。</loC>
+            </lo>
+            <lo tK="P150AD0070">
+                <loC>无法执行报表，因为在进行有关业务对象列表的操作时，你只能将筛选条件{0}绑定到列。</loC>
+            </lo>
+            <lo tK="P150AE0036">
+                <loC>Customized widget file path一栏不能为空。</loC>
+            </lo>
+            <lo tK="P150AE0037">
+                <loC>当前操作不支持绑定列。</loC>
+            </lo>
+            <lo tK="P150AD0071">
+                <loC>你所选择的类型尚不支持。</loC>
+            </lo>
+            <lo tK="P150AD0072">
+                <loC>无法找到外部服务：{0}。</loC>
+            </lo>
+            <lo tK="P150AD0073">
+                <loC>无法找到语义层服务。</loC>
+            </lo>
+            <lo tK="P150AD0074">
+                <loC>语义层服务功能 {0} 出错。</loC>
+            </lo>
+            <lo tK="P150AD0075">
+                <loC>字段 {0} 不存在。</loC>
+            </lo>
+            <lo tK="P150AD0076">
+                <loC>业务设置中尚未设置格式。</loC>
+            </lo>
+            <lo tK="P150AD0077">
+                <loC>尚未设置角色和权限。</loC>
+            </lo>
+            <lo tK="P150AD0079">
+                <loC>报表定义未成功保存。</loC>
+            </lo>
+            <lo tK="P150AD0080">
+                <loC>内部错误。未选取过滤：{0}。</loC>
+            </lo>
+            <lo tK="P150AD0081">
+                <loC>请选择至少一列用于展示数据。</loC>
+            </lo>
+            <lo tK="P150AD0082">
+                <loC>报表编辑器不支持该数据源类型：{0}。</loC>
+            </lo>
+            <lo tK="P150AD0084">
+                <loC>该报表名称已存在，请重新命名。</loC>
+            </lo>
+            <lo tK="P150AD0085">
+                <loC>本地报表{0}不存在。</loC>
+            </lo>
+            <lo tK="P150AD0086">
+                <loC>查询语句生成失败。</loC>
+            </lo>
+            <lo tK="P150AD0087">
+                <loC>表达式中的属性{0}不存在。</loC>
+            </lo>
+            <lo tK="P150AD0088">
+                <loC>当前操作不支持该报表类型。</loC>
+            </lo>
+        </loGrp>
+        <loGrp grpClass="textType" grpName="XFLD">
+            <lo maxL="20" tK="TYPE.BOOLEAN.YES">
+                <loC>是</loC>
+            </lo>
+            <lo maxL="20" tK="TYPE.BOOLEAN.NO">
+                <loC>否</loC>
+            </lo>
+            <lo maxL="20" tK="TYPE.YEAR.SUFFIX">
+                <loC>年</loC>
+            </lo>
+            <lo maxL="20" tK="MST.LATINF.NULLINF">
+                <loC>没有采购</loC>
+            </lo>
+            <lo maxL="20" tK="MST.LASTINF.PCS.INITIAL">
+                <loC>上一次采购:</loC>
+            </lo>
+            <lo maxL="20" tK="MST.LASTINF.PCS.SNGTAIL">
+                <loC>天前</loC>
+            </lo>
+            <lo maxL="20" tK="MST.LASTINF.PCS.MTLTAIL">
+                <loC>天前</loC>
+            </lo>
+            <lo maxL="20" tK="MST.LASTINF.TODAY">
+                <loC>今天</loC>
+            </lo>
+            <lo maxL="20" tK="label.Dashboard">
+                <loC>仪表盘</loC>
+            </lo>
+            <lo maxL="20" tK="label.Report.export">
+                <loC>报表 {0}</loC>
+            </lo>
+            <lo maxL="20" tK="label.Report">
+                <loC>报表</loC>
+            </lo>
+        </loGrp>
+    </body>
+</slim>

@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><slim xmlns="www.sap.com/slim" slimEd="1.0">
+    <header>
+        <locale>
+            <develLc>EN</develLc>
+            <contentLc>zh_CN</contentLc>
+        </locale>
+        <objType>line</objType>
+        <collection>BUSMB_SBO_OD20_ANW</collection>
+        <domain>AW</domain>
+        <contentName>BUSMB_SBO_UI_DASHBOARD_OD20_ANW</contentName>
+        <description>SAP Business One Cloud UI Dashboard</description>
+        <defaults>
+            <maxL>255</maxL>
+        </defaults>
+        <workflow>
+            <contacts>
+                <developer>i076652</developer>
+            </contacts>
+        </workflow>
+        <applSpec tK="VERSION">
+            <ASD>1</ASD>
+        </applSpec>
+        <applSpec tK="DATE">
+            <ASD>2014-12-03</ASD>
+        </applSpec>
+    </header>
+    <body>
+        <loGrp grpClass="textType" grpName="XTXT">
+            <lo maxL="60" tK="app.dashboard.DASHBOARD">
+                <loC>仪表盘</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.DASHBOARDCENTER">
+                <loC>仪表盘</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.NEWDASHBOARDNAME">
+                <loC>另存为新仪表盘</loC>
+            </lo>
+            <lo maxL="60" tK="app.report.PINVIEWTITLE">
+                <loC>重命名报表</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.REPORTCENTER">
+                <loC>报表</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.PARAMETER">
+                <loC>仪表盘参数</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.VIEWDATE_DESC">
+                <loC>{0} 天前最后一次查看</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.VIEWHOUR_DESC">
+                <loC>{0} 小时前最后一次查看</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.NEVERVIEW">
+                <loC>还未查看过</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.JUSTVIEW">
+                <loC>刚刚查看过</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.PARAM.SETTING.LINK">
+                <loC>将小部件关联到参数</loC>
+            </lo>ga
+            <lo maxL="60" tK="app.dashboard.DASHBOARDNAME">
+                <loC>未命名</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.VIEWNAME">
+                <loC>视图名称</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.PARAM.ADD">
+                <loC>添加新参数</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.PARAM.LINK.DESC">
+                <loC>{0} 个小部件关联到该参数</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.PARAM.LINK.DESC1">
+                <loC>个小部件关联到该参数</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.PARAM.NAME">
+                <loC>名字</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.PARAM.HINT">
+                <loC>描述</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.PARAM.TYPE">
+                <loC>类型</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.PARAM.PLEASESELECT">
+                <loC>请选择</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.PARAM.SOURCE">
+                <loC>细分类型</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.PARAM.MULTIVALUE">
+                <loC>多值</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.MEMBERLIST">
+                <loC>成员列表</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.WIDGET.CHART">
+                <loC>图表</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.WIDGET.COUNT">
+                <loC>计数</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.WIDGET.KPI">
+                <loC>KPI</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.WIDGET.LIST">
+                <loC>列表</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.WIDGET.TABLE">
+                <loC>表格</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.WIDGET.SCORECARD">
+                <loC>记分牌</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.WIDGET.MASTERDATA">
+                <loC>基础资料</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.WIDGET.OTHERS">
+                <loC>其他</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.WIDGET.FINANCE">
+                <loC>财务</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.WIDGET.CRM">
+                <loC>客户关系管理</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.WIDGET.SALES">
+                <loC>销售</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.WIDGET.INVENTORY">
+                <loC>库存</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.WIDGET.SERVICE">
+                <loC>服务</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.NODATA">
+                <loC>没有数据</loC>
+            </lo>
+            <lo maxL="30" tK="app.report.mobile.invAlt.desc">
+                <loC>库存紧缺的前20种产品</loC>
+            </lo>
+            <lo maxL="30" tK="app.report.mobile.invAlt.idname">
+                <loC>产品编号/名称</loC>
+            </lo>
+            <lo maxL="30" tK="app.report.mobile.invAlt.inStock">
+                <loC>库存总量</loC>
+            </lo>
+            <lo maxL="30" tK="app.report.mobile.invAlt.label">
+                <loC>库存数量</loC>
+            </lo>
+            <lo maxL="30" tK="app.report.mobile.invAlt.more">
+                <loC>还有{0}种产品。</loC>
+            </lo>
+            <lo maxL="30" tK="app.report.mobile.invAlt.product">
+                <loC>产品数</loC>
+            </lo>
+            <lo maxL="30" tK="app.report.mobile.invAlt.qty">
+                <loC>数量</loC>
+            </lo>
+            <lo maxL="30" tK="app.report.mobile.sales.chart">
+                <loC>本年销售趋势</loC>
+            </lo>
+            <lo maxL="30" tK="app.report.mobile.sales.daily.q">
+                <loC>销量 :</loC>
+            </lo>
+            <lo maxL="30" tK="app.report.mobile.sales.daily.t">
+                <loC>今日销售额</loC>
+            </lo>
+            <lo maxL="30" tK="app.report.mobile.sales.month.q">
+                <loC>本月销量</loC>
+            </lo>
+            <lo maxL="30" tK="app.report.mobile.sales.month.t">
+                <loC>本月销售额</loC>
+            </lo>
+            <lo maxL="30" tK="app.report.mobile.sales.monthlbl">
+                <loC>月份</loC>
+            </lo>
+            <lo maxL="30" tK="app.report.mobile.sales.year.q">
+                <loC>本年销量</loC>
+            </lo>
+            <lo maxL="30" tK="app.report.mobile.sales.year.t">
+                <loC>本年销售额</loC>
+            </lo>
+            <lo maxL="256" tK="app.report.mobile.invAlt.warnmsg">
+                <loC>库存预警：现有{0} 种产品库存不足。</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.WIDGET.CUSTOMIZED">
+                <loC>自定义样式</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.COPYDASHBOARD">
+                <loC>复制仪表盘</loC>
+            </lo>
+            <lo maxL="30" tK="app.report.upload">
+                <loC>上传报表</loC>
+            </lo>
+            <lo maxL="30" tK="app.dashboard.expand">
+                <loC>展开</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.LINK.LIST">
+                <loC>更新该链接至：</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.PARAM.DFTMEMBER">
+                <loC>默认值</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.PARAM.SELMEMBER">
+                <loC>值选项</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.PARAM.EMPTY">
+                <loC>空白</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.PARAM.SELMETHOD">
+                <loC>选项</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.PARAM.SGLSELECT">
+                <loC>单值</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.PARAM.ALL">
+                <loC>全部</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.PARAM.MULTISECT">
+                <loC>多值</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.FILTER_CONDITIONS">
+                <loC>参数条件</loC>
+            </lo>
+            <lo maxL="60" tK="app.dashboard.SELECTE_FILTERS">
+                <loC>选择参数</loC>
+            </lo>
+        </loGrp>
+        <loGrp grpClass="textType" grpName="XBUT">
+            <lo maxL="20" tK="app.dashboard.ACTION.ASSIGN">
+                <loC>分配</loC>
+            </lo>
+            <lo maxL="20" tK="app.dashboard.SORT.BYNAME">
+                <loC>按名称排序</loC>
+            </lo>
+            <lo maxL="20" tK="app.dashboard.SORT.BYTYPE">
+                <loC>按样式排序</loC>
+            </lo>
+            <lo maxL="20" tK="app.dashboard.SORT.BYCATEGORY">
+                <loC>按类别排序</loC>
+            </lo>
+            <lo maxL="20" tK="app.dashboard.SORT.BYVIEWDATE">
+                <loC>按查看时间排序</loC>
+            </lo>
+            <lo maxL="20" tK="app.dashboard.BYNAME">
+                <loC>按名称</loC>
+            </lo>
+            <lo maxL="20" tK="app.dashboard.BYTYPE">
+                <loC>按样式</loC>
+            </lo>
+            <lo maxL="20" tK="app.dashboard.BYCATEGORY">
+                <loC>按类别</loC>
+            </lo>
+            <lo maxL="20" tK="app.dashboard.BYVIEWDATE">
+                <loC>按查看日期</loC>
+            </lo>
+            <lo maxL="20" tK="app.dashboard.CREATENEW">
+                <loC>+ 新建</loC>
+            </lo>
+            <lo maxL="20" tK="app.dashboard.EDIT">
+                <loC>编辑</loC>
+            </lo>
+            <lo maxL="20" tK="app.dashboard.SELECTALL">
+                <loC>全选</loC>
+            </lo>
+            <lo maxL="20" tK="app.dashboard.IMPORT">
+                <loC>导入</loC>
+            </lo>
+            <lo maxL="20" tK="app.dashboard.NEWVIEW">
+                <loC>新视图</loC>
+            </lo>
+            <lo maxL="20" tK="app.dashboard.PARAM.SETTINGTITLE">
+                <loC>参数设置</loC>
+            </lo>
+            <lo maxL="20" tK="app.dashboard.PARAM.SETTING.ADD">
+                <loC>添加参数设置</loC>
+            </lo>
+            <lo maxL="20" tK="app.dashboard.SELECTWIDGET">
+                <loC>选择小部件</loC>
+            </lo>
+            <lo maxL="20" tK="app.dashboard.EXIT">
+                <loC>退出</loC>
+            </lo>
+            <lo maxL="20" tK="app.report.EXPORT.DOWNLOAD">
+                <loC>下载文件</loC>
+            </lo>
+            <lo maxL="20" tK="app.dashboard.CHOOSEPARAM">
+                <loC>选择参数</loC>
+            </lo>
+            <lo maxL="20" tK="app.dashboard.COPYTO">
+                <loC>复制</loC>
+            </lo>
+            <lo maxL="20" tK="app.dashboard.SORT.BYINITIAL">
+                <loC>按首字母排序</loC>
+            </lo>
+            <lo maxL="20" tK="app.report.ACTION.EDIT">
+                <loC>编辑</loC>
+            </lo>
+            <lo maxL="20" tK="app.dashboard.UNLINKBO">
+                <loC>更新链接</loC>
+            </lo>
+            <lo maxL="20" tK="app.dashboard.LINKBO">
+                <loC>将{0}关联到该仪表盘</loC>
+            </lo>
+            <lo maxL="20" tK="app.dashboard.ADDWIDGET">
+                <loC>添加小部件</loC>
+            </lo>
+        </loGrp>
+        <loGrp grpClass="textType" grpName="XMSG">
+            <lo maxL="100" tK="app.dashboard.PIN.SUCCESS">
+                <loC>成功添加到主页</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.PIN.FAIL">
+                <loC>无法添加到主页，请再试一次。</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.UNPIN.SUCCESS">
+                <loC>成功从主页移除</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.UNPIN.FAIL">
+                <loC>无法从主页移除，请再试一次。</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.ASSIGN.SUCCESS">
+                <loC>成功分配仪表盘</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.ASSIGN.FAIL">
+                <loC>无法分配仪表盘，请再试一次。</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.COPY.SUCCESS">
+                <loC>成功复制仪表盘</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.COPY.FAIL">
+                <loC>无法复制仪表盘，请再试一次。</loC>
+            </lo>
+            <lo maxL="100" tK="app.widget.IMPORT.SUCCESS">
+                <loC>成功导入小部件</loC>
+            </lo>
+            <lo maxL="100" tK="app.widget.IMPORT.FAIL">
+                <loC>无法导入小部件，请再试一次。</loC>
+            </lo>
+            <lo maxL="100" tK="app.widget.IMPORT.CONFIRM">
+                <loC>小部件已存在，你想替换它吗？</loC>
+            </lo>
+            <lo maxL="100" tK="app.report.IMPORT.SUCCESS">
+                <loC>成功导入报表</loC>
+            </lo>
+            <lo maxL="100" tK="app.report.IMPORT.FAIL">
+                <loC>无法导入报表，请再试一次。</loC>
+            </lo>
+            <lo maxL="100" tK="app.report.IMPORT.CONFIRM">
+                <loC>该报表已存在。如果该报表已添加至主页，替换后将自动从主页移除。是否替换？</loC>
+            </lo>
+            <lo maxL="100" tK="app.report.DELETE.SUCCESS">
+                <loC>成功删除报表</loC>
+            </lo>
+            <lo maxL="100" tK="app.report.DELETE.FAIL">
+                <loC>无法删除报表，请再试一次。</loC>
+            </lo>
+            <lo maxL="100" tK="app.report.DELETE.CONFIRM">
+                <loC>确定删除报表？</loC>
+            </lo>
+            <lo maxL="100" tK="app.report.DELETE.CONFIRMPIN">
+                <loC>报表 [{0}] 已被添加到主页。如果删除这些报表，那么添加到主页的那些报表也会被自动删除。要继续删除这些报表吗？</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.DELETE.SUCCESS">
+                <loC>成功删除仪表盘</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.DELETE.FAIL">
+                <loC>无法删除仪表盘，请再试一次。</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.DELETE.CONFIRM">
+                <loC>确定删除仪表盘？</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.DELETE.CONFIRMPIN">
+                <loC>仪表盘 [{0}] 已被添加到主页。如果删除此仪表盘，那么添加到主页的仪表盘也会被自动删除。确认删除该仪表盘？</loC>
+            </lo>
+            <lo maxL="100" tK="app.widget.DELETE.SUCCESS">
+                <loC>成功删除小部件</loC>
+            </lo>
+            <lo maxL="100" tK="app.widget.DELETE.FAIL">
+                <loC>无法删除小部件，请再试一次。</loC>
+            </lo>
+            <lo maxL="100" tK="app.widget.DELETE.CONFIRM">
+                <loC>确定删除小部件？</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.DELETE.NODELETE">
+                <loC>你还没有选择要删除的仪表盘。</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.DELETE.NODELETESYS">
+                <loC>默认仪表盘是由SAP Anywhere预定义的，你无法删除它们。</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.FIELD.MANDATORY">
+                <loC>该字段为必填项。</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.PARAM.SETVALUE">
+                <loC>请为该参数选择一个值。</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.INPUT.NAME">
+                <loC>请输入仪表盘名称。</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.PARAM.CONFIRM.PIN">
+                <loC>你修改了一些与参数有关的内容，这会导致之前添加到主页的仪表盘被自动删除。继续保存你的修改吗？</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.HAS.NOPARAMETER">
+                <loC>你修改了一些与参数有关的内容，这会导致之前添加到主页的仪表盘被自动删除。继续保存你的修改吗？</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.PARAM.DELETE.C">
+                <loC>确定删除该参数？</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.PARAM.LINKED.BY">
+                <loC>这个小部件已经关联到仪表盘参数 [{0}]。</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.PARAM.DUP.NAME">
+                <loC>参数名称已存在。</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.PARAM.NOLINK">
+                <loC>仪表盘参数 [{0}] 未关联任何小部件，确定要保存它吗？</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.WIDGET.NOLINK">
+                <loC>小部件 [{0}] 还未关联到任何仪表盘参数。</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.PARAM.NODESC">
+                <loC>没有描述。</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.PARAM.T.BO">
+                <loC>业务对象</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.PARAM.T.DATE">
+                <loC>日期</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.PARAM.T.STR">
+                <loC>文本</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.PARAM.T.NUM">
+                <loC>数字</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.PARAM.S.CUSTOMER">
+                <loC>客户</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.PARAM.S.WAREHOUSE">
+                <loC>仓库</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.PARAM.S.CAMPAIGN">
+                <loC>营销</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.PARAM.S.TEAM">
+                <loC>团队</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.PARAM.S.USER">
+                <loC>用户</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.PARAM.S.SCP">
+                <loC>服务优先级</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.VIEW.STEP2">
+                <loC>添加新参数</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.VIEW.STEP1">
+                <loC>选择小部件</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.VIEW.STEP3">
+                <loC>将小部件关联到参数</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.INSTANCE.PIN.DESC">
+                <loC>你正在将当前配好参数的仪表盘添加到主页，请为它重命名，以区别于搭配参数前的仪表盘。</loC>
+            </lo>
+            <lo maxL="100" tK="app.report.INSTANCE.PIN.DESC">
+                <loC>你正在将当前过滤条件下的报表添加到主页，请为它重命名，以区别于最初的报表。</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.PARAM.S.CHANNEL">
+                <loC>销售渠道</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.PARAM.T.DATERANGE">
+                <loC>日期范围</loC>
+            </lo>
+            <lo maxL="100" tK="app.report.EXPORT.DESC1">
+                <loC>一共有{0}行数据等待导出。</loC>
+            </lo>
+            <lo maxL="100" tK="app.report.EXPORT.DESC2">
+                <loC>你会将该报表中的表格导出到Microsoft Excel。当数据较多的时候，导出可能会花费一段时间。</loC>
+            </lo>
+            <lo maxL="100" tK="app.report.EXPORT.DESC3">
+                <loC>正在导出数据...</loC>
+            </lo>
+            <lo maxL="100" tK="app.report.EXPORT.DESC4">
+                <loC>请把文件下载到本地</loC>
+            </lo>
+            <lo maxL="100" tK="app.report.EXPORT.TITLE">
+                <loC>导出到 Microsoft Excel</loC>
+            </lo>
+            <lo maxL="100" tK="app.report.PARAM.DATEWARNING">
+                <loC>天数不能小于零。</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.PARAM.S.PRODUCT">
+                <loC>产品</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.PARAM.T.MORE">
+                <loC>更多选项</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.PARAM.INFO">
+                <loC>如果你勾选了该选项，就会筛选出所有支持多选的相应小部件。</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.SOCIAL.NODATA">
+                <loC>暂无数据。</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.SOCIAL.WAIT">
+                <loC>但如果当前客户刚刚添加了社交媒体账户，系统可能正在获取最新动态数据，你可以稍后点击刷新查看最新结果。</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.WIDGET.ERROR">
+                <loC>自定义小部件应用到仪表盘时出错</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.PARAM.S.CUSTGROUP">
+                <loC>客户组</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.PARAM.S.INDUSTRY">
+                <loC>行业</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.PARAM.S.PMTTERM">
+                <loC>支付条款</loC>
+            </lo>
+            <lo maxL="100" tK="app.report.RENAME.SUCCESS">
+                <loC>已成功重命名</loC>
+            </lo>
+            <lo maxL="100" tK="app.report.SAVE.CONFIRM">
+                <loC>该报表如果已添加至主页，保存修改后将自动从主页移除。是否保存？</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.CANCELEDIT.CONFIRM">
+                <loC>如果将其关闭，将不保存对仪表盘所做的修改。确定继续？</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.LINK.UPDATE">
+                <loC>是否将{0}页关联到该仪表盘？如果是，之前到{1}的关联将被取代。</loC>
+            </lo>
+            <lo maxL="200" tK="app.dashboard.PARAM.SETTINGDESC">
+                <loC>请先为参数设置选择选项。然后，根据已选的选择选项为参数选择一个或多个值。</loC>
+            </lo>
+            <lo maxL="180" tK="app.dashboard.FILTER.UPDATE">
+                <loC>添加的小部件包含仅支持单一值的参数。以下参数已更改为支持单一值：</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.SOCIAL.ALLCOMMENTS">
+                <loC>所有评论</loC>
+            </lo>
+            <lo maxL="100" tK="app.dashboard.SAVEIT.CONFIRM">
+                <loC>参数“[{0}]”无默认值集。确定继续？</loC>
+            </lo>
+        </loGrp>
+        <loGrp grpClass="textType" grpName="YMSG">
+            <lo maxL="254" tK="app.dashboard.OUTOFSPACE">
+                <loC>小部件的总尺寸超过了该仪表盘界面的最大容量，系统将自动取消选定小部件：{0}。你可以放弃部分小部件，或先调整一些小部件的大小后再添加。</loC>
+            </lo>
+        </loGrp>
+    </body>
+</slim>

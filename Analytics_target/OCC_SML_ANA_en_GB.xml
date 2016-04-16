@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><slim xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" slimEd="1.0" xsi:schemaLocation="www.sap.com/slim slim.xsd">
+    <header>
+        <locale>
+            <develLc>EN</develLc>
+            <contentLc>en_GB</contentLc>
+        </locale>
+        <objType>line</objType>
+        <domain>AW</domain>
+        <contentName>OCC_SML_ANA</contentName>
+        <description>A full featured SLIM-file</description>
+        <defaults>
+            <maxL>255</maxL>
+        </defaults>
+        <workflow>
+            <contacts>
+                <developer/>
+            </contacts>
+        </workflow>
+    </header>
+    <body>
+        <loGrp grpClass="textType" grpName="XMSG">
+            <lo tK="S001MT0001">
+                <loC>Semantic layer definition file {0} parse incorrect</loC>
+            </lo>
+            <lo tK="S001MT0002">
+                <loC>Semantic layer definition file {0} validation failed</loC>
+            </lo>
+            <lo tK="S001MT0003">
+                <loC>Failed to read the semantic layer definition file {0}</loC>
+            </lo>
+            <lo tK="S001MT0004">
+                <loC>Semantic layer definition file {0} not found</loC>
+            </lo>
+            <lo tK="S001MT0005">
+                <loC>Semantic layer definition file {0}: join element missing</loC>
+            </lo>
+            <lo tK="S001MT0006">
+                <loC>You can define no more than one join for the semantic layer definition file {0}.</loC>
+            </lo>
+            <lo tK="S001MT0007">
+                <loC>The semantic layer model is already changed. Please update your report.</loC>
+            </lo>
+        </loGrp>
+        <loGrp grpClass="textType" grpName="XFLD">
+            <lo maxL="20" tK="label.expand.Month">
+                <loC>Month</loC>
+            </lo>
+            <lo maxL="20" tK="label.expand.Year">
+                <loC>Year</loC>
+            </lo>
+            <lo maxL="20" tK="label.expand.YearMonth">
+                <loC>Calendar Month</loC>
+            </lo>
+            <lo maxL="20" tK="label.expand.YearMonthDay">
+                <loC>Calendar Day</loC>
+            </lo>
+            <lo maxL="20" tK="label.expand.day">
+                <loC>Day</loC>
+            </lo>
+            <lo maxL="20" tK="label.sharedChannel.code">
+                <loC>Channel Code</loC>
+            </lo>
+            <lo maxL="20" tK="label.sharedChannel.name">
+                <loC>Channel Name</loC>
+            </lo>
+            <lo maxL="20" tK="label.sharedCurrency.code">
+                <loC>Currency Code</loC>
+            </lo>
+            <lo maxL="20" tK="label.sharedCurrency.symbol">
+                <loC>Currency Symbol</loC>
+            </lo>
+            <lo maxL="20" tK="label.sharedCustomer.group">
+                <loC>Customer Group</loC>
+            </lo>
+            <lo maxL="20" tK="label.sharedCustomerGroup.description">
+                <loC>Customer Group Name</loC>
+            </lo>
+            <lo maxL="20" tK="label.sharedPaymentTerm.name">
+                <loC>Payment Term Name</loC>
+            </lo>
+            <lo maxL="20" tK="label.sharedPaymentType.code">
+                <loC>Payment Type Code</loC>
+            </lo>
+            <lo maxL="20" tK="label.sharedPaymentType.name">
+                <loC>Payment Type Name</loC>
+            </lo>
+            <lo maxL="20" tK="label.sharedProcess.code">
+                <loC>Fulfillment Method Code</loC>
+            </lo>
+            <lo maxL="20" tK="label.sharedProcess.name">
+                <loC>Fulfillment Method Name</loC>
+            </lo>
+            <lo maxL="20" tK="label.sharedShippingCarrier.name">
+                <loC>Shipping Carrier</loC>
+            </lo>
+            <lo maxL="20" tK="label.sohead.customer">
+                <loC>Customer</loC>
+            </lo>
+            <lo maxL="20" tK="label.sohead.desc">
+                <loC>Below are fields that you can choose from to customise your report.</loC>
+            </lo>
+            <lo maxL="20" tK="label.sohead.title">
+                <loC>Sales Order</loC>
+            </lo>
+            <lo tK="label.paycube.owner">
+                <loC>Owner</loC>
+            </lo>
+            <lo tK="label.Payment.boName">
+                <loC>Document Type</loC>
+            </lo>
+            <lo tK="label.Payment.ownerCode">
+                <loC>Owner Code</loC>
+            </lo>
+            <lo tK="label.Payment.updateTime">
+                <loC>Last Update Time</loC>
+            </lo>
+            <lo tK="label.SharedContactPerson.id">
+                <loC>Contact Person ID</loC>
+            </lo>
+            <lo tK="label.Payment.PaymentLine.appliedAmountLC">
+                <loC>Payment Amount (LC)</loC>
+            </lo>
+            <lo tK="label.Payment.PaymentLine.totalAmountLC">
+                <loC>Total Amount (LC)</loC>
+            </lo>
+            <lo tK="label.Payment.PaymentMethodLine.appliedPoints">
+                <loC>Applied Points</loC>
+            </lo>
+            <lo tK="label.Payment.cancelDate">
+                <loC>Cancellation Time</loC>
+            </lo>
+            <lo tK="label.paycube.creator">
+                <loC>Creator</loC>
+            </lo>
+            <lo tK="label.paylinecube.payment">
+                <loC>Payment/Prepayment Document Header</loC>
+            </lo>
+            <lo tK="label.Payment.creatorCode">
+                <loC>Creator Code</loC>
+            </lo>
+            <lo tK="label.Payment.updatorCode">
+                <loC>Updator Code</loC>
+            </lo>
+            <lo tK="label.paycube.updator">
+                <loC>Updator</loC>
+            </lo>
+            <lo maxL="20" tK="label.Manufacturer.id">
+                <loC>Manufacturer ID</loC>
+            </lo>
+            <lo maxL="20" tK="label.Category.id">
+                <loC>Category ID</loC>
+            </lo>
+            <lo maxL="20" tK="label.inventorystatus.desc">
+                <loC>You can choose from the following fields to customise your report:</loC>
+            </lo>
+            <lo maxL="20" tK="label.Manufacturer.name">
+                <loC>Manufacturer Name</loC>
+            </lo>
+            <lo maxL="20" tK="label.SKU.id">
+                <loC>SKU ID</loC>
+            </lo>
+            <lo maxL="20" tK="label.Vendor.id">
+                <loC>Supplier ID</loC>
+            </lo>
+            <lo maxL="20" tK="label.Brand.id">
+                <loC>Brand ID</loC>
+            </lo>
+            <lo maxL="20" tK="label.sharedVariantValue.variant">
+                <loC>Product Variants</loC>
+            </lo>
+            <lo maxL="20" tK="label.sharedVariantValue.value">
+                <loC>Variant Value</loC>
+            </lo>
+            <lo maxL="20" tK="label.sharedSalesOrder.updateTime">
+                <loC>Update Time</loC>
+            </lo>
+            <lo maxL="20" tK="label.soline.grossUnitPriceCalc">
+                <loC>Gross Unit Price</loC>
+            </lo>
+            <lo maxL="20" tK="label.report.Product.id">
+                <loC>Product ID</loC>
+            </lo>
+            <lo maxL="20" tK="label.Brand.name">
+                <loC>Brand Name</loC>
+            </lo>
+            <lo maxL="20" tK="label.sharedSalesOrder.creationTime">
+                <loC>Creation Time</loC>
+            </lo>
+            <lo maxL="20" tK="label.sharedVariantValue.code">
+                <loC>Code</loC>
+            </lo>
+            <lo maxL="20" tK="label.pohead.desc">
+                <loC>The following fields can be chosen to customise your report.</loC>
+            </lo>
+            <lo maxL="20" tK="label.Product.Status">
+                <loC>Product Status</loC>
+            </lo>
+            <lo maxL="20" tK="label.Brand.Name">
+                <loC>Brand Name</loC>
+            </lo>
+            <lo maxL="20" tK="label.poline.title">
+                <loC>Purchase Order Line</loC>
+            </lo>
+            <lo maxL="20" tK="label.sharedPurchaseOrder.creationTime">
+                <loC>Creation Time</loC>
+            </lo>
+            <lo maxL="20" tK="label.Manufacturer.Name">
+                <loC>Manufacturer Name</loC>
+            </lo>
+            <lo maxL="20" tK="label.Warehouse.Status">
+                <loC>Warehouse Status</loC>
+            </lo>
+            <lo maxL="20" tK="label.sharedPurchaseOrder.updateTime">
+                <loC>Update Time</loC>
+            </lo>
+            <lo maxL="20" tK="label.batchStatus.title">
+                <loC>Batch Status</loC>
+            </lo>
+            <lo maxL="20" tK="label.pohead.title">
+                <loC>Purchase Order</loC>
+            </lo>
+        </loGrp>
+    </body>
+</slim>

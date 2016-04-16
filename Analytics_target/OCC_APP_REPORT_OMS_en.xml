@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><slim xmlns="www.sap.com/slim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" slimEd="1.0" xsi:schemaLocation="www.sap.com/slim slim.xsd">
+    <header>
+        <locale>
+            <develLc>EN</develLc>
+            <contentLc>en</contentLc>
+        </locale>
+        <objType>line</objType>
+        <collection>ANYWHERE_OCC</collection>
+        <domain>AW</domain>
+        <contentName>OCC_APP_REPORT_OMS</contentName>
+        <description>A full featured SLIM-file</description>
+        <defaults>
+            <maxL>255</maxL>
+        </defaults>
+        <workflow>
+            <contacts>
+                <developer>I304957</developer>
+            </contacts>
+        </workflow>
+    </header>
+    <body>
+        <loGrp grpClass="textType" grpName="XFLD">
+            <lo maxL="200" tK="label.salesAnalysis.title">
+                <loC>Sales Analysis</loC>
+            </lo>
+            <lo maxL="200" tK="label.salesAnalysis.period">
+                <loC>Period</loC>
+            </lo>
+            <lo maxL="200" tK="label.salesAnalysis.documentNo">
+                <loC>Order No.</loC>
+            </lo>
+            <lo maxL="200" tK="label.salesAnalysis.netAmount">
+                <loC>Net Total</loC>
+            </lo>
+            <lo maxL="200" tK="label.salesAnalysis.grossAmount">
+                <loC>Gross Total</loC>
+            </lo>
+            <lo maxL="200" tK="label.salesAnalysis.grossProfit">
+                <loC>Gross Profit</loC>
+            </lo>
+            <lo maxL="200" tK="label.salesAnalysis.yAxisAmount">
+                <loC>Amount</loC>
+            </lo>
+            <lo maxL="200" tK="label.salesAnalysis.customerGroup">
+                <loC>Customer Group</loC>
+            </lo>
+            <lo maxL="200" tK="label.salesAnalysis.salesPerson">
+                <loC>Sales Employee</loC>
+            </lo>
+            <lo maxL="200" tK="label.salesAnalysis.channel">
+                <loC>Channel</loC>
+            </lo>
+            <lo maxL="200" tK="label.salesAnalysis.orderStatus">
+                <loC>Order's Overall Status</loC>
+            </lo>
+            <lo maxL="200" tK="label.salesAnalysis.customerType">
+                <loC>Customer Type</loC>
+            </lo>
+            <lo maxL="200" tK="label.salesAnalysis.startDate">
+                <loC>Start Date</loC>
+            </lo>
+            <lo maxL="200" tK="label.salesAnalysis.endDate">
+                <loC>End Date</loC>
+            </lo>
+            <lo maxL="200" tK="label.salesSummary.title">
+                <loC>Sales Summary</loC>
+            </lo>
+            <lo maxL="200" tK="label.salesSummary.docDate">
+                <loC>Order Date</loC>
+            </lo>
+            <lo maxL="200" tK="label.salesSummary.documentNo">
+                <loC>Order No.</loC>
+            </lo>
+            <lo maxL="200" tK="label.salesSummary.customerName">
+                <loC>Customer Name</loC>
+            </lo>
+            <lo maxL="200" tK="label.salesSummary.status">
+                <loC>Order Status</loC>
+            </lo>
+            <lo maxL="200" tK="label.salesSummary.emName">
+                <loC>Employee Name</loC>
+            </lo>
+            <lo maxL="200" tK="label.salesSummary.netAmount">
+                <loC>Net Total</loC>
+            </lo>
+            <lo maxL="200" tK="label.salesSummary.taxAmount">
+                <loC>Total Tax</loC>
+            </lo>
+            <lo maxL="200" tK="label.salesSummary.grossAmount">
+                <loC>Gross Total</loC>
+            </lo>
+            <lo maxL="200" tK="label.salesSummary.paidAmount">
+                <loC>Paid Total</loC>
+            </lo>
+            <lo maxL="200" tK="label.salesSummary.customerGroup">
+                <loC>Customer Group</loC>
+            </lo>
+            <lo maxL="200" tK="label.salesSummary.salesPerson">
+                <loC>Sales Employee</loC>
+            </lo>
+            <lo maxL="200" tK="label.salesSummary.channel">
+                <loC>Sales Channel</loC>
+            </lo>
+            <lo maxL="200" tK="label.salesSummary.orderStatus">
+                <loC>Order's Overall Status</loC>
+            </lo>
+            <lo maxL="200" tK="label.salesSummary.customerType">
+                <loC>Customer Type</loC>
+            </lo>
+            <lo maxL="200" tK="label.salesSummary.startDate">
+                <loC>Start Time</loC>
+            </lo>
+            <lo maxL="200" tK="label.salesSummary.endDate">
+                <loC>End Time</loC>
+            </lo>
+            <lo maxL="200" tK="label.customer360.customerCode">
+                <loC>Customer</loC>
+            </lo>
+            <lo maxL="200" tK="label.recentOrders.title">
+                <loC>Recent Orders</loC>
+            </lo>
+            <lo maxL="400" tK="label.recentOrders.description">
+                <loC>This widget lists recent orders chronologically. Clicking the orders listed in this widget, enables you to jump to each order's master data.</loC>
+            </lo>
+            <lo maxL="200" tK="label.top5products.title">
+                <loC>Top 5 Products</loC>
+            </lo>
+            <lo maxL="400" tK="label.top5products.description">
+                <loC>This bar chart displays the top 5 products by sales amount.</loC>
+            </lo>
+            <lo maxL="200" tK="label.top5products.productName">
+                <loC>Product Name</loC>
+            </lo>
+            <lo maxL="200" tK="label.top5products.maxDate">
+                <loC>Latest Sale Date</loC>
+            </lo>
+            <lo maxL="200" tK="label.ranking.title">
+                <loC>Ranking</loC>
+            </lo>
+            <lo maxL="400" tK="label.ranking.description">
+                <loC>This widget displays the customer's ranking during a specific period of time from two perspectives: revenue and return rate. Revenue is the total amount of the invoiced orders. The greater the revenue is, the higher the ranking will be. Return rate is calculated by "returned amount/total order amount". The higher the return rate is, the higher the ranking will be.</loC>
+            </lo>
+            <lo maxL="200" tK="label.ranking.revenue">
+                <loC>Revenue</loC>
+            </lo>
+            <lo maxL="200" tK="label.ranking.returnRate">
+                <loC>Return Rate</loC>
+            </lo>
+            <lo maxL="200" tK="label.ranking.number">
+                <loC>No.</loC>
+            </lo>
+            <lo maxL="200" tK="label.ranking.thisYear">
+                <loC>This Year</loC>
+            </lo>
+            <lo maxL="200" tK="label.orderedVsReturned.title">
+                <loC>Ordered vs. Returned in Last 12 Months</loC>
+            </lo>
+            <lo maxL="400" tK="label.orderedVsReturned.description">
+                <loC>This line chart displays "ordered amount vs. returned amount in last 12 months". It provides a clear understanding of the variations and trends of the ordered and returned amounts in the past year.</loC>
+            </lo>
+            <lo maxL="200" tK="label.orderedVsReturned.from">
+                <loC>From</loC>
+            </lo>
+            <lo maxL="200" tK="label.orderedVsReturned.to">
+                <loC>To</loC>
+            </lo>
+            <lo maxL="200" tK="label.orderedVsReturned.amount">
+                <loC>Amount</loC>
+            </lo>
+            <lo maxL="200" tK="label.orderedVsReturned.date">
+                <loC>Date</loC>
+            </lo>
+            <lo maxL="200" tK="label.orderedVsReturned.ordered">
+                <loC>Ordered</loC>
+            </lo>
+            <lo maxL="200" tK="label.orderedVsReturned.returned">
+                <loC>Returned</loC>
+            </lo>
+            <lo maxL="200" tK="label.totalOrderVolume.title">
+                <loC>Customer Order Total</loC>
+            </lo>
+            <lo maxL="400" tK="label.totalOrderVolume.description">
+                <loC>This widget provides the total order amount placed by a customer or a group of customers during a certain period of time.</loC>
+            </lo>
+            <lo maxL="200" tK="label.totalOrderVolume.fromLastYear">
+                <loC>From the Same Month Last Year</loC>
+            </lo>
+            <lo maxL="200" tK="label.totalOrderVolume.fromLastMonth">
+                <loC>From Last Month</loC>
+            </lo>
+            <lo maxL="200" tK="label.totalOrderVolume.thisMonth">
+                <loC>This Month</loC>
+            </lo>
+            <lo maxL="200" tK="label.alert.title">
+                <loC>Alerts</loC>
+            </lo>
+            <lo maxL="200" tK="label.alert.description">
+                <loC>This widget provides the number of open and undelivered orders, the amount of unpaid and returned orders, and the service case alaerts for a specific period of time.</loC>
+            </lo>
+            <lo maxL="200" tK="label.alert.openOrder">
+                <loC>Open Order</loC>
+            </lo>
+            <lo maxL="200" tK="label.alert.undelivered">
+                <loC>Undelivered</loC>
+            </lo>
+            <lo maxL="200" tK="label.alert.exceedingClose.openOrder">
+                <loC>Exceeding the latest delivery time</loC>
+            </lo>
+            <lo maxL="200" tK="label.alert.exceedingClose.undelivered">
+                <loC>Exceeding the latest delivery time</loC>
+            </lo>
+            <lo maxL="200" tK="label.alert.unpaied">
+                <loC>Unpaid</loC>
+            </lo>
+            <lo maxL="200" tK="label.alert.overdue">
+                <loC>Overdue</loC>
+            </lo>
+            <lo maxL="200" tK="label.alert.return">
+                <loC>Returned</loC>
+            </lo>
+            <lo maxL="200" tK="label.detailedPayments.title">
+                <loC>Payment Method Transactions</loC>
+            </lo>
+            <lo maxL="200" tK="label.detailedPayments.customerName">
+                <loC>Customer Name</loC>
+            </lo>
+            <lo maxL="200" tK="label.detailedPayments.startDate">
+                <loC>Start Date</loC>
+            </lo>
+            <lo maxL="200" tK="label.detailedPayments.endDate">
+                <loC>End Date</loC>
+            </lo>
+            <lo maxL="200" tK="label.productSales.title">
+                <loC>Product Sales</loC>
+            </lo>
+            <lo maxL="200" tK="label.revenueReport.title">
+                <loC>Store Revenue</loC>
+            </lo>
+            <lo maxL="200" tK="label.revenueReport.store">
+                <loC>Store</loC>
+            </lo>
+            <lo maxL="200" tK="label.revenueReport.storeName">
+                <loC>Store Name</loC>
+            </lo>
+            <lo maxL="200" tK="label.revenueReport.soldVolume">
+                <loC>Sales Revenue</loC>
+            </lo>
+            <lo maxL="200" tK="label.revenueReport.refundVolume">
+                <loC>Refund</loC>
+            </lo>
+            <lo maxL="200" tK="label.revenueReport.refundItem">
+                <loC>Returned Quantity</loC>
+            </lo>
+            <lo maxL="200" tK="label.revenueReport.soldItem">
+                <loC>Sales Volume</loC>
+            </lo>
+            <lo maxL="200" tK="label.detailedPayments.docType">
+                <loC>Document Type</loC>
+            </lo>
+            <lo maxL="200" tK="label.detailedPayments.docType.payment">
+                <loC>Payment</loC>
+            </lo>
+            <lo maxL="200" tK="label.detailedPayments.docType.prepayment">
+                <loC>Prepayment</loC>
+            </lo>
+            <lo maxL="200" tK="label.detailedPayments.paymentMethod">
+                <loC>Payment Method</loC>
+            </lo>
+            <lo maxL="200" tK="label.customerBalance.desc">
+                <loC>Credit Limit – Unpaid Invoices + Prepayments</loC>
+            </lo>
+            <lo maxL="200" tK="label.customerBalance.description">
+                <loC>This widget provides the customer's actual available credit limit by substracting the unpaid invoices and adding the prepayment amount.</loC>
+            </lo>
+            <lo maxL="200" tK="label.customerBalance.title">
+                <loC>Customer Balance</loC>
+            </lo>
+            <lo maxL="200" tK="label.targetGroups.description">
+                <loC>This widget lists the most recently created target groups that the customer belongs to.</loC>
+            </lo>
+            <lo maxL="200" tK="label.targetGroups.title">
+                <loC>Target Groups</loC>
+            </lo>
+            <lo maxL="200" tK="label.totalOrderVolume.since">
+                <loC>Since</loC>
+            </lo>
+            <lo maxL="200" tK="label.salesAnalysisForMobile.channel">
+                <loC>Sales Channel</loC>
+            </lo>
+            <lo maxL="200" tK="label.salesAnalysisForMobile.date">
+                <loC>Date</loC>
+            </lo>
+            <lo maxL="200" tK="label.salesAnalysisForMobile.grossAmountLC">
+                <loC>Gross Total (LC)</loC>
+            </lo>
+            <lo maxL="200" tK="label.salesAnalysisForMobile.title">
+                <loC>Sales Analysis</loC>
+            </lo>
+            <lo maxL="200" tK="label.salesAnalysisForMobile.totalQuantity">
+                <loC>Total Quantity</loC>
+            </lo>
+            <lo maxL="200" tK="label.salesSummary.fromToDate">
+                <loC>Date Range</loC>
+            </lo>
+            <lo maxL="200" tK="label.top5customers.channel">
+                <loC>Sales Channel</loC>
+            </lo>
+            <lo maxL="200" tK="label.top5customers.customerCode">
+                <loC>Customer Code</loC>
+            </lo>
+            <lo maxL="200" tK="label.top5customers.customerName">
+                <loC>Customer Name</loC>
+            </lo>
+            <lo maxL="400" tK="label.top5customers.description">
+                <loC>This bar chart provides the top 5 customers whose total order amount precedes the others, the respective gross total and the net total of them.</loC>
+            </lo>
+            <lo maxL="200" tK="label.top5customers.grossAmount">
+                <loC>Gross Total</loC>
+            </lo>
+            <lo maxL="200" tK="label.top5customers.netAmount">
+                <loC>Net Total</loC>
+            </lo>
+            <lo maxL="200" tK="label.top5customers.title">
+                <loC>Top 5 Customers by Sales Order</loC>
+            </lo>
+            <lo maxL="200" tK="label.top5products.channel">
+                <loC>Sales Channel</loC>
+            </lo>
+            <lo maxL="200" tK="label.top5products.grossAmount">
+                <loC>Gross Amount</loC>
+            </lo>
+            <lo maxL="200" tK="label.top5products.netAmount">
+                <loC>Net Total</loC>
+            </lo>
+            <lo maxL="200" tK="label.top5products.productCode">
+                <loC>Product Code</loC>
+            </lo>
+            <lo maxL="200" tK="label.socialMessages.description">
+                <loC>This widget displays the most recent social media feeds of a customer or group of customers. You can also jump to another page to view all comments left by the customer(s).</loC>
+            </lo>
+            <lo maxL="200" tK="label.socialMessages.title">
+                <loC>Social Media Feeds</loC>
+            </lo>
+            <lo maxL="200" tK="label.Customer.value.null">
+                <loC>Value not set</loC>
+            </lo>
+            <lo maxL="200" tK="label.CustomerGroup.value.null">
+                <loC>Value not set</loC>
+            </lo>
+            <lo maxL="200" tK="label.Employee.value.null">
+                <loC>Value not set</loC>
+            </lo>
+            <lo maxL="200" tK="label.Team.value.null">
+                <loC>Value not set</loC>
+            </lo>
+            <lo maxL="200" tK="label.Warehouse.value.null">
+                <loC>Value not set</loC>
+            </lo>
+            <lo maxL="200" tK="label.paymentBehavior.amount">
+                <loC>Amount</loC>
+            </lo>
+            <lo maxL="200" tK="label.paymentBehavior.category">
+                <loC>Category</loC>
+            </lo>
+            <lo maxL="200" tK="label.paymentBehavior.customerGroup">
+                <loC>Customer Group</loC>
+            </lo>
+            <lo maxL="200" tK="label.paymentBehavior.industry">
+                <loC>Customer Industry</loC>
+            </lo>
+            <lo maxL="200" tK="label.paymentBehavior.paid">
+                <loC>Paid Amount</loC>
+            </lo>
+            <lo maxL="200" tK="label.paymentBehavior.paymentTerm">
+                <loC>Payment Terms</loC>
+            </lo>
+            <lo maxL="200" tK="label.paymentBehavior.title">
+                <loC>Payment Behavior</loC>
+            </lo>
+            <lo maxL="200" tK="label.paymentBehavior.unpdNoovdu">
+                <loC>Unpaid &amp; Not Overdue Amount</loC>
+            </lo>
+            <lo maxL="200" tK="label.paymentBehavior.unpdOvdu">
+                <loC>Unpaid &amp; Overdue Amount</loC>
+            </lo>
+            <lo maxL="200" tK="label.salesAnalysis.grossProfitMargin">
+                <loC>Gross Profit %</loC>
+            </lo>
+            <lo maxL="200" tK="label.customerFeedsTagCloud.count">
+                <loC>Word Count</loC>
+            </lo>
+            <lo maxL="200" tK="label.customerFeedsTagCloud.description">
+                <loC>This widget displays tags in a customer's social media feeds.</loC>
+            </lo>
+            <lo maxL="200" tK="label.customerFeedsTagCloud.title">
+                <loC>Social Media Feeds Tag Cloud</loC>
+            </lo>
+            <lo maxL="200" tK="label.customerFeedsTagCloud.token">
+                <loC>Word</loC>
+            </lo>
+            <lo maxL="200" tK="label.campaigns.description">
+                <loC>The Widget shows you which campaigns a specific customer was targeted by. This enables you to put yourself into your customer's perspective and tells you which marketing messages they have received.</loC>
+            </lo>
+            <lo maxL="200" tK="label.campaigns.title">
+                <loC>Campaigns</loC>
+            </lo>
+        </loGrp>
+    </body>
+</slim>
